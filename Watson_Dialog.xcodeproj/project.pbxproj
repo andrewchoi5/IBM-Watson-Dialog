@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		967B4BDC1C8E561500D538CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B4BDB1C8E561500D538CE /* AppDelegate.swift */; };
+		967B4BDE1C8E561500D538CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B4BDD1C8E561500D538CE /* ViewController.swift */; };
+		967B4BE11C8E561500D538CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967B4BDF1C8E561500D538CE /* Main.storyboard */; };
+		967B4BE31C8E561500D538CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967B4BE21C8E561500D538CE /* Assets.xcassets */; };
+		967B4BE61C8E561500D538CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967B4BE41C8E561500D538CE /* LaunchScreen.storyboard */; };
+		967B4BF11C8E561500D538CE /* Watson_DialogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B4BF01C8E561500D538CE /* Watson_DialogTests.swift */; };
+		967B4BFC1C8E561500D538CE /* Watson_DialogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B4BFB1C8E561500D538CE /* Watson_DialogUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		967B4BED1C8E561500D538CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 967B4BD01C8E561500D538CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 967B4BD71C8E561500D538CE;
+			remoteInfo = Watson_Dialog;
+		};
+		967B4BF81C8E561500D538CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 967B4BD01C8E561500D538CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 967B4BD71C8E561500D538CE;
+			remoteInfo = Watson_Dialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		967B4BD81C8E561500D538CE /* Watson_Dialog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watson_Dialog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		967B4BDB1C8E561500D538CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		967B4BDD1C8E561500D538CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		967B4BE01C8E561500D538CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		967B4BE21C8E561500D538CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		967B4BE51C8E561500D538CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		967B4BE71C8E561500D538CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967B4BEC1C8E561500D538CE /* Watson_DialogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Watson_DialogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		967B4BF01C8E561500D538CE /* Watson_DialogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watson_DialogTests.swift; sourceTree = "<group>"; };
+		967B4BF21C8E561500D538CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967B4BF71C8E561500D538CE /* Watson_DialogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Watson_DialogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		967B4BFB1C8E561500D538CE /* Watson_DialogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watson_DialogUITests.swift; sourceTree = "<group>"; };
+		967B4BFD1C8E561500D538CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		967B4BD51C8E561500D538CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967B4BE91C8E561500D538CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967B4BF41C8E561500D538CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		967B4BCF1C8E561500D538CE = {
+			isa = PBXGroup;
+			children = (
+				967B4BDA1C8E561500D538CE /* Watson_Dialog */,
+				967B4BEF1C8E561500D538CE /* Watson_DialogTests */,
+				967B4BFA1C8E561500D538CE /* Watson_DialogUITests */,
+				967B4BD91C8E561500D538CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		967B4BD91C8E561500D538CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				967B4BD81C8E561500D538CE /* Watson_Dialog.app */,
+				967B4BEC1C8E561500D538CE /* Watson_DialogTests.xctest */,
+				967B4BF71C8E561500D538CE /* Watson_DialogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		967B4BDA1C8E561500D538CE /* Watson_Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				967B4BDB1C8E561500D538CE /* AppDelegate.swift */,
+				967B4BDD1C8E561500D538CE /* ViewController.swift */,
+				967B4BDF1C8E561500D538CE /* Main.storyboard */,
+				967B4BE21C8E561500D538CE /* Assets.xcassets */,
+				967B4BE41C8E561500D538CE /* LaunchScreen.storyboard */,
+				967B4BE71C8E561500D538CE /* Info.plist */,
+			);
+			path = Watson_Dialog;
+			sourceTree = "<group>";
+		};
+		967B4BEF1C8E561500D538CE /* Watson_DialogTests */ = {
+			isa = PBXGroup;
+			children = (
+				967B4BF01C8E561500D538CE /* Watson_DialogTests.swift */,
+				967B4BF21C8E561500D538CE /* Info.plist */,
+			);
+			path = Watson_DialogTests;
+			sourceTree = "<group>";
+		};
+		967B4BFA1C8E561500D538CE /* Watson_DialogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				967B4BFB1C8E561500D538CE /* Watson_DialogUITests.swift */,
+				967B4BFD1C8E561500D538CE /* Info.plist */,
+			);
+			path = Watson_DialogUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		967B4BD71C8E561500D538CE /* Watson_Dialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967B4C001C8E561500D538CE /* Build configuration list for PBXNativeTarget "Watson_Dialog" */;
+			buildPhases = (
+				967B4BD41C8E561500D538CE /* Sources */,
+				967B4BD51C8E561500D538CE /* Frameworks */,
+				967B4BD61C8E561500D538CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Watson_Dialog;
+			productName = Watson_Dialog;
+			productReference = 967B4BD81C8E561500D538CE /* Watson_Dialog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		967B4BEB1C8E561500D538CE /* Watson_DialogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967B4C031C8E561500D538CE /* Build configuration list for PBXNativeTarget "Watson_DialogTests" */;
+			buildPhases = (
+				967B4BE81C8E561500D538CE /* Sources */,
+				967B4BE91C8E561500D538CE /* Frameworks */,
+				967B4BEA1C8E561500D538CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				967B4BEE1C8E561500D538CE /* PBXTargetDependency */,
+			);
+			name = Watson_DialogTests;
+			productName = Watson_DialogTests;
+			productReference = 967B4BEC1C8E561500D538CE /* Watson_DialogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		967B4BF61C8E561500D538CE /* Watson_DialogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967B4C061C8E561500D538CE /* Build configuration list for PBXNativeTarget "Watson_DialogUITests" */;
+			buildPhases = (
+				967B4BF31C8E561500D538CE /* Sources */,
+				967B4BF41C8E561500D538CE /* Frameworks */,
+				967B4BF51C8E561500D538CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				967B4BF91C8E561500D538CE /* PBXTargetDependency */,
+			);
+			name = Watson_DialogUITests;
+			productName = Watson_DialogUITests;
+			productReference = 967B4BF71C8E561500D538CE /* Watson_DialogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		967B4BD01C8E561500D538CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Archetapp;
+				TargetAttributes = {
+					967B4BD71C8E561500D538CE = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = JRXKU2XCE8;
+					};
+					967B4BEB1C8E561500D538CE = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = JRXKU2XCE8;
+						TestTargetID = 967B4BD71C8E561500D538CE;
+					};
+					967B4BF61C8E561500D538CE = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = JRXKU2XCE8;
+						TestTargetID = 967B4BD71C8E561500D538CE;
+					};
+				};
+			};
+			buildConfigurationList = 967B4BD31C8E561500D538CE /* Build configuration list for PBXProject "Watson_Dialog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 967B4BCF1C8E561500D538CE;
+			productRefGroup = 967B4BD91C8E561500D538CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				967B4BD71C8E561500D538CE /* Watson_Dialog */,
+				967B4BEB1C8E561500D538CE /* Watson_DialogTests */,
+				967B4BF61C8E561500D538CE /* Watson_DialogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		967B4BD61C8E561500D538CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967B4BE61C8E561500D538CE /* LaunchScreen.storyboard in Resources */,
+				967B4BE31C8E561500D538CE /* Assets.xcassets in Resources */,
+				967B4BE11C8E561500D538CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967B4BEA1C8E561500D538CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967B4BF51C8E561500D538CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		967B4BD41C8E561500D538CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967B4BDE1C8E561500D538CE /* ViewController.swift in Sources */,
+				967B4BDC1C8E561500D538CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967B4BE81C8E561500D538CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967B4BF11C8E561500D538CE /* Watson_DialogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967B4BF31C8E561500D538CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967B4BFC1C8E561500D538CE /* Watson_DialogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		967B4BEE1C8E561500D538CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 967B4BD71C8E561500D538CE /* Watson_Dialog */;
+			targetProxy = 967B4BED1C8E561500D538CE /* PBXContainerItemProxy */;
+		};
+		967B4BF91C8E561500D538CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 967B4BD71C8E561500D538CE /* Watson_Dialog */;
+			targetProxy = 967B4BF81C8E561500D538CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		967B4BDF1C8E561500D538CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				967B4BE01C8E561500D538CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		967B4BE41C8E561500D538CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				967B4BE51C8E561500D538CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		967B4BFE1C8E561500D538CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		967B4BFF1C8E561500D538CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		967B4C011C8E561500D538CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Watson_Dialog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archetapp.Watson-Dialog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		967B4C021C8E561500D538CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Watson_Dialog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archetapp.Watson-Dialog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		967B4C041C8E561500D538CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Watson_DialogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archetapp.Watson-DialogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watson_Dialog.app/Watson_Dialog";
+			};
+			name = Debug;
+		};
+		967B4C051C8E561500D538CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Watson_DialogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archetapp.Watson-DialogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watson_Dialog.app/Watson_Dialog";
+			};
+			name = Release;
+		};
+		967B4C071C8E561500D538CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Watson_DialogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archetapp.Watson-DialogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Watson_Dialog;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		967B4C081C8E561500D538CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Watson_DialogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archetapp.Watson-DialogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Watson_Dialog;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		967B4BD31C8E561500D538CE /* Build configuration list for PBXProject "Watson_Dialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967B4BFE1C8E561500D538CE /* Debug */,
+				967B4BFF1C8E561500D538CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		967B4C001C8E561500D538CE /* Build configuration list for PBXNativeTarget "Watson_Dialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967B4C011C8E561500D538CE /* Debug */,
+				967B4C021C8E561500D538CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		967B4C031C8E561500D538CE /* Build configuration list for PBXNativeTarget "Watson_DialogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967B4C041C8E561500D538CE /* Debug */,
+				967B4C051C8E561500D538CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		967B4C061C8E561500D538CE /* Build configuration list for PBXNativeTarget "Watson_DialogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967B4C071C8E561500D538CE /* Debug */,
+				967B4C081C8E561500D538CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 967B4BD01C8E561500D538CE /* Project object */;
+}
