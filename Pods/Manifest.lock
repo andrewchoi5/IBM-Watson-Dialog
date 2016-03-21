@@ -1,0 +1,16 @@
+PODS:
+  - Canvas (0.1.2)
+  - LTMorphingLabel (0.1.1)
+  - SwiftSiriWaveformView (0.0.3)
+
+DEPENDENCIES:
+  - Canvas (~> 0.1.2)
+  - LTMorphingLabel
+  - SwiftSiriWaveformView
+
+SPEC CHECKSUMS:
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  LTMorphingLabel: dfc40f43a0dcf81867b1f29431f34e861a5f1b35
+  SwiftSiriWaveformView: 884eafc6efa345555ecf1fcb1baaa2cef7e185dc
+
+COCOAPODS: 0.39.0

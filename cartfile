@@ -1,0 +1,3 @@
+# cartfile contents
+github "watson-developer-cloud/ios-sdk"
+github "lexrus/LTMorphingLabel"

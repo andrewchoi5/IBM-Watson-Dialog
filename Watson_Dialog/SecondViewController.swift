@@ -1,42 +1,34 @@
-
-
 import Foundation
 import UIKit
 import AVFoundation
-//
-//extension UIView {
-//    func fadeTransition(duration:CFTimeInterval) {
-//        let animation:CATransition = CATransition()
-//        animation.timingFunction = CAMediaTimingFunction(name:
-//            kCAMediaTimingFunctionEaseInEaseOut)
-//        animation.type = kCATransitionFade
-//        animation.duration = duration
-//        self.layer.addAnimation(animation, forKey: kCATransitionFade)
-//    }
-//}
-
+import WatsonDeveloperCloud
+import LTMorphingLabel
+import SwiftSiriWaveformView
 class SecondViewController: UIViewController {
+    var timer:NSTimer?
+    var change:CGFloat = 0.01
+    
+    var player: AVAudioPlayer?
+    
+    let s:CGFloat = 18
+    
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var hello: LTMorphingLabel!
     
-    @IBOutlet var siriImageView: UIImageView!
+    @IBOutlet var audioView: SwiftSiriWaveformView!
     
-    
-    @IBOutlet var hello: UILabel!
-    @IBOutlet var watson2: UILabel!
-    @IBOutlet var watson3: UILabel!
-    @IBOutlet var watson4: UILabel!
-    @IBOutlet var watson5: UILabel!
-    @IBOutlet var watson6: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.blackColor()
         
-        hello.hidden = true
-        watson2.hidden = true
-        watson3.hidden = true
-        watson4.hidden = true
-        watson5.hidden = true
-        watson6.hidden = true
+        self.audioView.density = 1.0
+        
+        self.view.backgroundColor = UIColor.blackColor()
+//        audioView.amplitude = 0.2
+        self.hello.text = " "
+        self.hello.morphingEffect = .Evaporate
+        self.hello.hidden = false
+//        self.hello.font = hello.font.fontWithSize(50)
+        self.hello.font = UIFont(name: "Optima", size: s) //Apple SD Gothic Neo
         
         var imagesNames: [String] = []
         for i in 1...84 {
@@ -47,175 +39,193 @@ class SecondViewController: UIViewController {
             images.append(UIImage(named: imagesNames[i])!)
         }
         imageView.animationImages = images
-        imageView.animationDuration = 6.2
+        imageView.animationDuration = 4.8
         imageView.startAnimating()
-        
-        
-        
-//        var siriImagesNames: [String] = []
-//        for i in 1...203 {
-//            siriImagesNames.append("voice-"+String(i)+" (dragged).tiff")
-//        }
-//        var siriImages = [UIImage]()
-//        for i in 0..<siriImagesNames.count{
-//            siriImages.append(UIImage(named: siriImagesNames[i])!)
-//        }s
-//        siriImageView.animationImages = siriImages
-//        siriImageView.animationDuration = 6.2
-//        siriImageView.startAnimating()
-        
-        
-        
-        
         watsonSpeak()
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    func watsonSpeak(){
-        let s1 = "Good Afternoon Andrew, How may I help you today"
-        let s2 = "Are you a student? I'll have to see if you're eligible for an SPC Card."
-        let s3 = "Okay. Are you looking for a card with yearly fee or no fee"
-        let s4 = "Do you need travel points"
-        let s5 = "Is there a particular brand you’re looking for"
-        let s6 = "Excellent, here are the best options I’ve found."
-//        let s = "안녕하세요? 제 이름은 최유진이고, 새해 신입인턴으로 입사하게된 아이오에스안드로이드 개발자입니다. " +
-//        "이번계기로 이 어플을 만드는데 참여를 하게 되어서, 영광이라고 생각합니다. " + "야 이, 게이같은, 씨발놈아, 너는 나한테 몇대를 맞아야 정신차릴래 "
+    internal func watsonSpeak(){
+        let tts = TextToSpeech(username: "94e76655-04d0-4f25-9498-3708b3de514a", password: "KrQzpIRpuoyD") //IBM Bluemix service
+        let s1 = "Good afternoon there! How may I help you today?"
+        let s2 = "I can help reduce your monthly interest payments. Would you like to do so?"
+        let s3 = "Your line of credit with lower interest rate has some room on it, we can transfer $1700 of debt from your credit card to it, thus reducing your monthly payments by $23."
+        let s4 = "Done! How else can I help you today?"
+        let s5 = "Would you like it to have airmiles, rewards, cashback or anything?"
+        let s6 = "Okay, let’s see what I can find for you."
         let utterance1 = AVSpeechUtterance(string: s1)
-        let utterance2 = AVSpeechUtterance(string: s2)
-        let utterance3 = AVSpeechUtterance(string: s3)
-        let utterance4 = AVSpeechUtterance(string: s4)
-        let utterance5 = AVSpeechUtterance(string: s5)
-        let utterance6 = AVSpeechUtterance(string: s6)
 //        let utterance7 = AVSpeechUtterance(string: s7)
         utterance1.voice = AVSpeechSynthesisVoice(language: "en-US") //ko-KR, en-US
-        utterance2.voice = AVSpeechSynthesisVoice(language: "en-US")
-        utterance3.voice = AVSpeechSynthesisVoice(language: "en-US")
-        utterance4.voice = AVSpeechSynthesisVoice(language: "en-US")
-        utterance5.voice = AVSpeechSynthesisVoice(language: "en-US")
-        utterance6.voice = AVSpeechSynthesisVoice(language: "en-US")
 //        utterance7.voice = AVSpeechSynthesisVoice(language: "en-US")
 //        utterance1.preUtteranceDelay = 3
-        
 //        utterance1.postUtteranceDelay = 2
-//        utterance2.postUtteranceDelay = 2
-//        utterance3.postUtteranceDelay = 2
-//        utterance4.postUtteranceDelay = 2
-//        utterance5.postUtteranceDelay = 2
-//        utterance6.postUtteranceDelay = 2
-
+//        let waveformjs = waveform.stringByEvaluatingJavaScriptFromString("mainFunction.js")
+        _ = NSHomeDirectory()
         utterance1.pitchMultiplier = 1.3
-        utterance2.pitchMultiplier = 1.3
-        utterance3.pitchMultiplier = 1.3
-        utterance4.pitchMultiplier = 1.3
-        utterance5.pitchMultiplier = 1.3
-        utterance6.pitchMultiplier = 1.3
-//        utterance7.pitchMultiplier = 1.3
         
-        let synthesizer = AVSpeechSynthesizer()
-        let d:Double = 6.0
-        let s:CGFloat = 17
+        _ = AVSpeechSynthesizer()
+//        let d:Double = 2.0
         
-        
-       
-        delay(0.1){
+        delay(3.0){ //1st
+              self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+
             
-            self.hello.text = ""
-//            self.hello.font = UIFont(name: hello., size: 20)
-            //Apple SD Gothic Neo Regular 17.0
-            self.hello.hidden = false
-            self.hello.fadeOut(completion: {
-                (finished: Bool) -> Void in
-                self.hello.text = "Good afternoon Andrew, how may I help you today?"
-                self.hello.font = UIFont(name: "Apple SD Gothic Neo", size: s)
+                self.hello.text = s1
+//                self.hello.font = UIFont(name: "Apple SD Gothic Neo", size: self.s)
                 self.hello.fadeIn()
-                synthesizer.speakUtterance(utterance1)
-            })        
-            delay(d) {
-               
-                self.watson2.text = ""
-                self.watson2.hidden = false
-                self.watson2.fadeOut(completion: {
-                    (finished: Bool) -> Void in
-                    self.watson2.text = "Are you a student? I'll have to see if you're eligible for an SPC Card."
-                    self.watson2.font = UIFont(name: "Apple SD Gothic Neo", size: s)
-                    self.watson2.fadeIn()
-                    synthesizer.speakUtterance(utterance2)
-                })
-                delay(d) {
-                   
-                    self.watson3.text = ""
-                    self.watson3.hidden = false
-                    self.watson3.fadeOut(completion: {
-                        (finished: Bool) -> Void in
-                        self.watson3.text = "Okay. Are you looking for a card with yearly fee or no fee?"
-                        self.watson3.font = UIFont(name: "Apple SD Gothic Neo", size: s)
-                        self.watson3.fadeIn()
-                        synthesizer.speakUtterance(utterance3)
-                    })
-                    delay(d) {
-                       
-                        self.watson4.text = ""
-                        self.watson4.hidden = false
-                        self.watson4.fadeOut(completion: {
-                            (finished: Bool) -> Void in
-                            self.watson4.text = "I see, will you require some travel points?"
-                            self.watson4.font = UIFont(name: "Apple SD Gothic Neo", size: s)
-                            self.watson4.fadeIn()
-                            synthesizer.speakUtterance(utterance4)
-                            
-                        })
-                        delay(d) {
-                            self.watson5.text = ""
-                            self.watson5.hidden = false
-                            self.watson5.fadeOut(completion: {
-                                (finished: Bool) -> Void in
-                                self.watson5.text = "Is there a particular brand that you are looking for?"
-                                self.watson5.font = UIFont(name: "Apple SD Gothic Neo", size: s)
-                                self.watson5.fadeIn()
-                                synthesizer.speakUtterance(utterance5)
-                            })
-                            delay(d) {
-                                self.watson6.text = ""
-                                self.watson6.hidden = false
-                                self.watson6.fadeOut(completion: {
-                                    (finished: Bool) -> Void in
-                                    self.watson6.text = "Excellent, here are the best options I’ve found."
-                                    self.watson6.font = UIFont(name: "Apple SD Gothic Neo", size: s)
-                                    self.watson6.fadeIn()
-                                    synthesizer.speakUtterance(utterance6)
-                                })
-                            }
+                
+                tts.synthesize(s1) { //GB_Kate //US_Allison //US_Lisa
+                    data, error in
+                    if let audio = data {
+                        do {
+                            self.player = try AVAudioPlayer(data: audio)
+                            self.player!.play()
+                        } catch {
+                            print("Couldn't create player.")
                         }
                     }
                 }
-            }
+            delay(3.0){ // 1.5st
+                self.timer?.invalidate()
+//                self.timer = nil
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+                delay(6.0) { //2nd
+                    self.timer?.invalidate()
+//                    self.timer = nil
+//                    self.audioView.amplitude = 0.0
+                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+                        self.hello.text = s2
+                        tts.synthesize("I can help reduce your monthly interest payments. Would you like to do so?") {
+                            data, error in
+                            if let audio = data {
+                                do {
+                                    self.player = try AVAudioPlayer(data: audio)
+                                    self.player!.play()
+                                } catch {
+                                    print("Couldn't create player.")
+                                }
+                            }
+                        }
+                    delay(4.0){ //2.5nd delay
+                        self.timer?.invalidate()
+//                        self.timer = nil
+                        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+                        delay(5.0) { //3rd
+                            self.timer?.invalidate()
+//                            self.timer = nil
+                            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+                                self.hello.text = s3
+                                tts.synthesize(s3) {//en-US_AllisonVoice
+                                    data, error in
+                                    if let audio = data {
+                                        do {
+                                            self.player = try AVAudioPlayer(data: audio)
+                                            self.player!.play()
+                                        } catch {
+                                            print("Couldn't create player.")
+                                        }
+                                    }
+                                }
+                            delay(11.0){//3.5rd delay
+                                self.timer?.invalidate()
+//                                self.timer = nil
+                                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+                                delay(5.0) { //4th
+                                    self.timer?.invalidate()
+                                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+                                    self.hello.text = s4
+                                    tts.synthesize(s4) {//en-US_AllisonVoice
+                                        data, error in
+                                        if let audio = data {
+                                            do {
+                                                self.player = try AVAudioPlayer(data: audio)
+                                                self.player!.play()
+                                            } catch {
+                                                print("Couldn't create player.")
+                                            }
+                                        }
+                                    }
+                                    delay(3.0){//4.5th
+                                        self.timer?.invalidate()
+//                                        self.timer = nil
+                                        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+                                        delay(5.0) { //5th
+                                            self.timer?.invalidate()
+                                            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+                                            self.hello.text = s5
+                                            tts.synthesize(s5) {//en-US_AllisonVoice
+                                                data, error in
+                                                if let audio = data {
+                                                    do {
+                                                        self.player = try AVAudioPlayer(data: audio)
+                                                        self.player!.play()
+                                                    } catch {
+                                                        print("Couldn't create player.")
+                                                    }
+                                                }
+                                            }
+                                            delay(5.0){//5.5th
+                                                self.timer?.invalidate()
+                                                self.timer = nil
+                                                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+                                                delay(5.0) { //6th
+                                                    self.timer?.invalidate()
+                                                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+                                                    self.hello.text = s6
+                                                    tts.synthesize(s6) {//en-US_AllisonVoice
+                                                        data, error in
+                                                        if let audio = data {
+                                                            do {
+                                                                self.player = try AVAudioPlayer(data: audio)
+                                                                self.player!.play()
+                                                            } catch {
+                                                                print("Couldn't create player.")
+                                                            }
+                                                        }
+                                                    }
+                                                }//last delay 6th
+                                            }//5.5th delay
+                                        }// 5th delay
+                                    }//4.5th delay
+                                }// 4th delay
+                            }//3.5rd delay
+                        }// 3rd delay
+                    }//2.5nd delay
+                }// 2nd delay
+            }//1.5st delay
+        }//1st delay
+    }// internal func watsonSpeak
+    
+    internal func refreshAudioView(_:NSTimer) {
+        self.audioView.amplitude = 0.2//comment it out?
+        if self.audioView.amplitude <= self.audioView.idleAmplitude || self.audioView.amplitude > 1.0 {
+            self.change *= -1.0
         }
-//        synthesizer.speakUtterance(utterance6)
-//        synthesizer.speakUtterance(utterance7)
+        
+        // Simply set the amplitude to whatever you need and the view will update itself.
+        self.audioView.amplitude += self.change
     }
-    
+    internal func zeroAudioView(_:NSTimer) {
+        //        self.audioView.amplitude = 1.0//comment it out?
+        if self.audioView.amplitude <= self.audioView.idleAmplitude || self.audioView.amplitude > 1.0 {
+            self.change *= -1.0
+        }
+        
+        // Simply set the amplitude to whatever you need and the view will update itself.
+        self.audioView.amplitude = 0.0
+    }
 }
-
-
-
-
-
-
 // MARK: Utility functions
-
 func delay(delay: Double, closure: ()->()) {
-    
     // A handy bit of code created by Matt Neuburg, author of a lot of books including
     // iOS Programming Fundamentals with Swift (O'Reilly 2015).
     // See his reply in Stack Overflow for details:
     // http://stackoverflow.com/questions/24034544/dispatch-after-gcd-in-swift/24318861#24318861
-    //
     // The secret sauce is Grand Central Dispatch's (GCD) dispatch_after() function.
     // Ray Wenderlich has a good tutorial on GCD at:
     // http://www.raywenderlich.com/79149/grand-central-dispatch-tutorial-swift-part-1
@@ -228,7 +238,6 @@ func delay(delay: Double, closure: ()->()) {
         closure
     )
 }
-
 func randomIntUpToButNotIncluding(count: Int) -> Int {
     return Int(arc4random_uniform(UInt32(count)))
 }

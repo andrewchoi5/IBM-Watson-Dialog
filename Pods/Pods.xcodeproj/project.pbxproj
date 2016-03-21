@@ -1,0 +1,1462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0035E280E2227924AC4E2F8B3D44EF6B /* CSBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 10D0978325B1573C0BC643C13A80B6CA /* CSBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04913062FB19F572704D1F80F24D0F1E /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 231AAF98ED4FB5511374C09CD20AE84B /* Fragment.png */; };
+		050D31F1ACF003324524127CC92E1C6F /* UITextView+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BF919437ACE60C1EB0D8C4C59C4DA9 /* UITextView+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09655714894296138E974CBC74484E5C /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9118E131ED104F087C86C67922B07F /* LTMorphingLabel.swift */; };
+		0B0B16FE44CBECB512D2FC308055C7BB /* LTMorphingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F114CE9A0165655567FF0B27B07B0E7F /* LTMorphingLabel-dummy.m */; };
+		10DA04EC085D11D23E0E3F0DBABE5114 /* LTMorphingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBD96EF1EA09FCF763941D6E0CDFF48 /* LTMorphingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10DD03168F90B724A0EE13FCBC4D0E3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		146EA652DBF62F28CFB6A3001693A9D8 /* UITextView+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D5E489E985A4EA01B13A33B0349C89 /* UITextView+TCCustomFont.m */; };
+		194F240E2777ABB596A2DB81BA4729E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		1CF8DFA896A6618005B677B8793DBF0E /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE44F36B9B2EC93A4EFF353E00CE4DB /* Fire.png */; };
+		2B3C98BF6B534DD54B2918F45B66A324 /* UITextField+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CEB99D42A8CD9D2AEB20505365CD600 /* UITextField+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BCB71131A2BA8A3E999A2F8941C929B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		33F02D96B52C9D8226030DABDD497830 /* Pods-Watson_DialogTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E59C0AD866F34BC15692DDBF17E629 /* Pods-Watson_DialogTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35D1068A16F7B860DBF2FF11F7E88197 /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E13743BF6EE018727065A2B9264B39 /* LTMorphingEffect.swift */; };
+		37437BE1DBC4C60EEF23B79D6C994BF8 /* CSAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AB3E190757828837D9BEBF040C8DC5 /* CSAnimationView.m */; };
+		401A7DAFE42E4A8D8B065ABB2B5028D1 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417D2D06E3FEEB41E127229E06CD9AB /* LTMorphingLabel+Sparkle.swift */; };
+		441F5E5D08D95F2CB24338F6C03614AA /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC690843CD413A2E6B444516CBC6F88 /* SwiftSiriWaveformView.swift */; };
+		4F3DF3C44C278FE44AD44BA7C7FFE416 /* CSAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F5D19AB6B84223D4A0472A2C49BDFA /* CSAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51DB856BD58ADC66EAF464260C9BB683 /* CSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2B15099A6C16EAB8AB377916F893A8 /* CSNavigationController.m */; };
+		573B13ABBF79FA6ABDACA8F14750D83F /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = A85FE88AD1D1C17D269517520338F066 /* Sparkle.png */; };
+		5CF83FB2E49B3342A3C09B02E8F474D5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */; };
+		62821F4D42C187B437988C64DBA6E0C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
+		662C71BB07B541650F00C223691E8902 /* UILabel+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5412C275D6824184208411E06B53CC /* UILabel+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D788B76816727C1A62423110141CCF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		70B2D8EA2BEB709B46B24A957D5722FE /* Pods-Watson_DialogTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CCA5DB8253CD714DD6F958B50BE5AA7 /* Pods-Watson_DialogTests-dummy.m */; };
+		734DF067BCBFE07F41DB57C14CEAB1B0 /* Pods-Watson_DialogUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68501652431DB6EB8918F76C794331A7 /* Pods-Watson_DialogUITests-dummy.m */; };
+		74DEC2D3601595D8C6850C8FB7173158 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8AEE5BD58B679676C98F284FF120D /* LTCharacterLimbo.swift */; };
+		82CCC01A0501720443407C7842A2F8EE /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9E0A032CC0BF3003F4AD70BE88DD4E /* LTMorphingLabel+Evaporate.swift */; };
+		87A5677A6AE8315FC08C7AFDA06C5E85 /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805F95E3B45CC38877F397942DE2180E /* LTMorphingLabel+Anvil.swift */; };
+		8915AEA53F1600BF6073C50DBBF13864 /* Pods-Watson_Dialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD4DAD4E9AF0AE2CF9963E5E7B1324 /* Pods-Watson_Dialog-dummy.m */; };
+		8B42D2606FF4087C458940EB8FAD9C65 /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3454501643ED31D937EACE335575AE17 /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94C184FAE53AE7FE2DAAF71250C88399 /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F9E3C8560A9D21716E13A9F0AE040B /* LTEmitterView.swift */; };
+		9CD2F676F12CF59997D469DC44040977 /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD71520F23F0F04840D56A1947DB0D /* LTEasing.swift */; };
+		9D989C6CF5D3FB6CD25E4B65A14F250C /* Pods-Watson_DialogUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52E16D4554A600BB38B0037D87A348CC /* Pods-Watson_DialogUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2EAB23D235F8B41E28A14ADD16542A9 /* CSNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 917EE21AE247859CC899F345EEBCC8C5 /* CSNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4EA40424DE05E3B7D83EDB3033EB1AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		A83EA20A85C635A04A657D6E4D460E23 /* Pods-Watson_Dialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 697974DB18F111C6CEBB6439979ADFD6 /* Pods-Watson_Dialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE024FC0C6A794A8BC3B113BF63E836A /* UIButton+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C7A9A470CA37930D138B7ED9E674DA3 /* UIButton+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B37A4CE3AE562C1B0715F69687E6644A /* CSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC532A5BD0B40518B22F301C00851A87 /* CSBlurView.m */; };
+		BA25E1C4EFB2B53764E95238C01FC541 /* LTMorphingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 299ECD306B6461D45BDA3157F98F1D4D /* LTMorphingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB925E8D5E0EF07A8346E84D87503C42 /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB92F8C4B27D303B4E9A4EF658DD776 /* SwiftSiriWaveformView-dummy.m */; };
+		C12996EA896ABDF39A40FC94315EA238 /* UILabel+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CC5953FE42ADAA777327E7943FDAB /* UILabel+TCCustomFont.m */; };
+		C5703AD94DB5E55AF9A2D572CC81A08B /* Canvas-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCD43EADA8A635DE044EA31FBAC83D8 /* Canvas-dummy.m */; };
+		C9EA18F788CF76E49B34C3B12A42200D /* CSAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB9B80D50A1C062F2DB1EAED4254748 /* CSAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB9EA82F545BB2D13A0B32FF3A9FFF1C /* CSAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E789D7EE7DD9E291BF06E8D78EDD220E /* CSAnimation.m */; };
+		CFC6568F9625CFEDE89544D5E106EE56 /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98B8749E58A9B8B23714FB031622299 /* LTMorphingLabel+Fall.swift */; };
+		D40D84C336EB60A2349DA835277B3BB6 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D44CF197DA189C1C28CD3B7FBE5D7 /* LTMorphingLabel+Burn.swift */; };
+		D4BEFE9697D2C98014CEA515831D78EC /* NSString+LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3ED7C69540F4D289F41BA84729BEA6 /* NSString+LTMorphingLabel.swift */; };
+		D7AF1C498BACC7A8145392B6E3AC91FB /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0A3BCC72D0325450569C0BA2D7CB85 /* LTMorphingLabel+Pixelate.swift */; };
+		DAD9483A8C579DE8A0561E2EC91736EB /* UINavigationBar+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BB5374B7E4A7F19CB90CCC000D4550 /* UINavigationBar+TCCustomFont.m */; };
+		DB678D6A80AE82C0E08F121230FADB12 /* UITextField+PlaceholderColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 65ABE0832E81B8244A7B8EA9AE64B384 /* UITextField+PlaceholderColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD0DB59C5A2FC7EF534D4BFE1F45BFDC /* Canvas-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4CFFE33F30913D528B03AB47FAC0CD3 /* Canvas-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9556B6C0FBC1894056CA9E9DFFC0E5 /* UINavigationBar+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E2B348712AC2951887E57BBDED8D8 /* UINavigationBar+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0280B7E837B585206DACE6B58CBA14A /* UIButton+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 732F3F4F5223D110A05D5CBD4FBD774B /* UIButton+TCCustomFont.m */; };
+		E064A372B02C1DB0F4DD763CAD500BA1 /* Canvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 26917F00527DA21960EA975A3DE81779 /* Canvas.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64E0DA42FF43A0CE84FC8E07BA9C2F4 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E22CDBEBF37F315155F8A762BD9D590 /* Smoke.png */; };
+		E6D3EE6978B2F94ED8084FAA815FEABB /* SwiftSiriWaveformView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95D2124B6D9D20FB7DF8B61E16DE985C /* SwiftSiriWaveformView.bundle */; };
+		F0F119C05F6408B9E0F8064AA86D77C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		F36FC5C3F71A1B956F4D4837202295AF /* UITextField+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 392267ED6FBB34AB3EB00E156E202A49 /* UITextField+TCCustomFont.m */; };
+		FF638CC4A9134346D3A7831C880CF8CC /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 265C2261B01B84944E514E9F22C67DDA /* UITextField+PlaceholderColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		008C7CCA6CF49800E2C7FE320811D9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA34A355D4498470F5AD7180AA3D78B4;
+			remoteInfo = SwiftSiriWaveformView;
+		};
+		0CDB8DD5AE0AC58CFC579866DE4D6373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80CBCC225074FD190F9BEA2940592423;
+			remoteInfo = Canvas;
+		};
+		675C834BCB655BB825CF97B5F52F5459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFD52F1345D56B64E1035498F5A6DC7C;
+			remoteInfo = "SwiftSiriWaveformView-SwiftSiriWaveformView";
+		};
+		84872D95D62A7E65C0A1164841038667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80CBCC225074FD190F9BEA2940592423;
+			remoteInfo = Canvas;
+		};
+		8C64DF2CFC0E8D38131531B01475F4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DCBD6C869DCC15AF62D43471CB4592C;
+			remoteInfo = LTMorphingLabel;
+		};
+		90C3834F90DDE826657F699C0059A495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DCBD6C869DCC15AF62D43471CB4592C;
+			remoteInfo = LTMorphingLabel;
+		};
+		BD8FEBC6EE8DE01107EA495FD456E137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DCBD6C869DCC15AF62D43471CB4592C;
+			remoteInfo = LTMorphingLabel;
+		};
+		C63ACAE031E054076AD5EDC0E9A3E395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA34A355D4498470F5AD7180AA3D78B4;
+			remoteInfo = SwiftSiriWaveformView;
+		};
+		E84BEE9D80069D4BE4F0DDE769FBD2F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA34A355D4498470F5AD7180AA3D78B4;
+			remoteInfo = SwiftSiriWaveformView;
+		};
+		FA49927244683E8AF793C3DD4A5E6835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80CBCC225074FD190F9BEA2940592423;
+			remoteInfo = Canvas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065513A20E9213D0CECA5B0FAAB6CFA5 /* SwiftSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F8746C9E6D8663487B3F8B78044030 /* Pods-Watson_DialogTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Watson_DialogTests.modulemap"; sourceTree = "<group>"; };
+		0C7B58F217A349B4100AA924F473C286 /* Pods-Watson_DialogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watson_DialogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E8CC5953FE42ADAA777327E7943FDAB /* UILabel+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+TCCustomFont.m"; path = "CanvasLibrary/UILabel+TCCustomFont.m"; sourceTree = "<group>"; };
+		10D0978325B1573C0BC643C13A80B6CA /* CSBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSBlurView.h; path = CanvasLibrary/CSBlurView.h; sourceTree = "<group>"; };
+		1BA86F1AB715DB6C467AE5F7277425A8 /* Canvas-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Canvas-prefix.pch"; sourceTree = "<group>"; };
+		1E3C8A44B8DF1282E49B8BDFD973C18B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E59C0AD866F34BC15692DDBF17E629 /* Pods-Watson_DialogTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Watson_DialogTests-umbrella.h"; sourceTree = "<group>"; };
+		231AAF98ED4FB5511374C09CD20AE84B /* Fragment.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fragment.png; path = LTMorphingLabel/Particles/Fragment.png; sourceTree = "<group>"; };
+		265C2261B01B84944E514E9F22C67DDA /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+PlaceholderColor.m"; path = "CanvasLibrary/UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
+		26917F00527DA21960EA975A3DE81779 /* Canvas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Canvas.h; path = CanvasLibrary/Canvas.h; sourceTree = "<group>"; };
+		2974F5616F26F8727FA66FD3B3E009AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299ECD306B6461D45BDA3157F98F1D4D /* LTMorphingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-umbrella.h"; sourceTree = "<group>"; };
+		2C2E2B348712AC2951887E57BBDED8D8 /* UINavigationBar+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+TCCustomFont.h"; path = "CanvasLibrary/UINavigationBar+TCCustomFont.h"; sourceTree = "<group>"; };
+		3454501643ED31D937EACE335575AE17 /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
+		35C104DC328B3E4D4FE0F08A09039A31 /* Pods-Watson_Dialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Watson_Dialog.modulemap"; sourceTree = "<group>"; };
+		36D60ECA2BE492098AD14B0F5526ADC1 /* Pods-Watson_DialogUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watson_DialogUITests-resources.sh"; sourceTree = "<group>"; };
+		37137B553286EA839B765ECA264D8ED1 /* Pods-Watson_DialogTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watson_DialogTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		392267ED6FBB34AB3EB00E156E202A49 /* UITextField+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+TCCustomFont.m"; path = "CanvasLibrary/UITextField+TCCustomFont.m"; sourceTree = "<group>"; };
+		3AB9B80D50A1C062F2DB1EAED4254748 /* CSAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSAnimationView.h; path = CanvasLibrary/CSAnimationView.h; sourceTree = "<group>"; };
+		3B0602937CA9B9514CB592677D5564C4 /* Pods-Watson_Dialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watson_Dialog.debug.xcconfig"; sourceTree = "<group>"; };
+		3C94B74A4B69B1AA28EA182B31D09991 /* Pods-Watson_DialogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watson_DialogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		455FCDF6BFE58AA95071DD6CBDE4895A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E13743BF6EE018727065A2B9264B39 /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
+		49535FA159E8ADCF5D895F770FD32CFB /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		4E22CDBEBF37F315155F8A762BD9D590 /* Smoke.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Smoke.png; path = LTMorphingLabel/Particles/Smoke.png; sourceTree = "<group>"; };
+		52E16D4554A600BB38B0037D87A348CC /* Pods-Watson_DialogUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Watson_DialogUITests-umbrella.h"; sourceTree = "<group>"; };
+		52F5D19AB6B84223D4A0472A2C49BDFA /* CSAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSAnimation.h; path = CanvasLibrary/CSAnimation.h; sourceTree = "<group>"; };
+		5417D2D06E3FEEB41E127229E06CD9AB /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		55BF919437ACE60C1EB0D8C4C59C4DA9 /* UITextView+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+TCCustomFont.h"; path = "CanvasLibrary/UITextView+TCCustomFont.h"; sourceTree = "<group>"; };
+		5C7A9A470CA37930D138B7ED9E674DA3 /* UIButton+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+TCCustomFont.h"; path = "CanvasLibrary/UIButton+TCCustomFont.h"; sourceTree = "<group>"; };
+		63D5E489E985A4EA01B13A33B0349C89 /* UITextView+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+TCCustomFont.m"; path = "CanvasLibrary/UITextView+TCCustomFont.m"; sourceTree = "<group>"; };
+		65ABE0832E81B8244A7B8EA9AE64B384 /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+PlaceholderColor.h"; path = "CanvasLibrary/UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
+		65DB642FF44B19297F8CA814BD6A5A2C /* LTMorphingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-prefix.pch"; sourceTree = "<group>"; };
+		68501652431DB6EB8918F76C794331A7 /* Pods-Watson_DialogUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watson_DialogUITests-dummy.m"; sourceTree = "<group>"; };
+		697974DB18F111C6CEBB6439979ADFD6 /* Pods-Watson_Dialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Watson_Dialog-umbrella.h"; sourceTree = "<group>"; };
+		69A57CAE75DB75569723CACC2F71E4E4 /* Pods_Watson_DialogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_DialogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D002F78568EA2C62E92431F62DCA012 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCB0B0236D9833F15D6AB463E6F3DBC /* Pods-Watson_DialogTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watson_DialogTests-resources.sh"; sourceTree = "<group>"; };
+		70F9E3C8560A9D21716E13A9F0AE040B /* LTEmitterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEmitterView.swift; path = LTMorphingLabel/LTEmitterView.swift; sourceTree = "<group>"; };
+		732F3F4F5223D110A05D5CBD4FBD774B /* UIButton+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+TCCustomFont.m"; path = "CanvasLibrary/UIButton+TCCustomFont.m"; sourceTree = "<group>"; };
+		75F8AEE5BD58B679676C98F284FF120D /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		7805DA1385474078D867DCC5A65FCCF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCA5DB8253CD714DD6F958B50BE5AA7 /* Pods-Watson_DialogTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watson_DialogTests-dummy.m"; sourceTree = "<group>"; };
+		7F0C6A82413D7CBCCCED41B34D033EB3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FBD96EF1EA09FCF763941D6E0CDFF48 /* LTMorphingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LTMorphingLabel.h; path = LTMorphingLabel/LTMorphingLabel.h; sourceTree = "<group>"; };
+		805F95E3B45CC38877F397942DE2180E /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		84A6093F816F687782852A1138DFD589 /* Pods-Watson_DialogUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watson_DialogUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85E46CE28E04D19294C8913DFF853AFE /* Pods-Watson_DialogUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watson_DialogUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A1D6C890B110E13CFC4982444B7F573 /* Pods_Watson_DialogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_DialogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEB99D42A8CD9D2AEB20505365CD600 /* UITextField+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+TCCustomFont.h"; path = "CanvasLibrary/UITextField+TCCustomFont.h"; sourceTree = "<group>"; };
+		8E6A2FB278448D10B96A7AE83C5ADB87 /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
+		8F5412C275D6824184208411E06B53CC /* UILabel+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+TCCustomFont.h"; path = "CanvasLibrary/UILabel+TCCustomFont.h"; sourceTree = "<group>"; };
+		91413329813FA6FE5A78842159E69621 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		917EE21AE247859CC899F345EEBCC8C5 /* CSNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSNavigationController.h; path = CanvasLibrary/CSNavigationController.h; sourceTree = "<group>"; };
+		92E82AC57AA98E068FCF2F8F98499114 /* Pods-Watson_Dialog-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watson_Dialog-acknowledgements.markdown"; sourceTree = "<group>"; };
+		95D2124B6D9D20FB7DF8B61E16DE985C /* SwiftSiriWaveformView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSiriWaveformView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9E0A032CC0BF3003F4AD70BE88DD4E /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		9BC3514C3F86EF02BC9C4E92BC76ABB5 /* Pods-Watson_Dialog-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watson_Dialog-resources.sh"; sourceTree = "<group>"; };
+		9CCD43EADA8A635DE044EA31FBAC83D8 /* Canvas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Canvas-dummy.m"; sourceTree = "<group>"; };
+		9DD89FE4EC13F85A35132E3795CA6DA6 /* Pods-Watson_DialogTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watson_DialogTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A226C379DBB5B790DECEFBE4240D1610 /* Pods-Watson_Dialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watson_Dialog.release.xcconfig"; sourceTree = "<group>"; };
+		A85FE88AD1D1C17D269517520338F066 /* Sparkle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Sparkle.png; path = LTMorphingLabel/Particles/Sparkle.png; sourceTree = "<group>"; };
+		AF6CDABDD101C20029A8DCFAD7BF90D9 /* Pods-Watson_DialogUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Watson_DialogUITests.modulemap"; sourceTree = "<group>"; };
+		B68846D83327EAF8F4D31C0D3D2B673B /* Canvas.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Canvas.modulemap; sourceTree = "<group>"; };
+		B8F9579222BE47DDEA2A6A966827568B /* Canvas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Canvas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC532A5BD0B40518B22F301C00851A87 /* CSBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSBlurView.m; path = CanvasLibrary/CSBlurView.m; sourceTree = "<group>"; };
+		C1AB3E190757828837D9BEBF040C8DC5 /* CSAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSAnimationView.m; path = CanvasLibrary/CSAnimationView.m; sourceTree = "<group>"; };
+		C7CD4DAD4E9AF0AE2CF9963E5E7B1324 /* Pods-Watson_Dialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watson_Dialog-dummy.m"; sourceTree = "<group>"; };
+		C7DD71520F23F0F04840D56A1947DB0D /* LTEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEasing.swift; path = LTMorphingLabel/LTEasing.swift; sourceTree = "<group>"; };
+		C92187DEDE152B98E0DBEB1F4C8807E5 /* Canvas.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Canvas.xcconfig; sourceTree = "<group>"; };
+		CE0B4FEED4BD0F6368B96D19F9C30EED /* LTMorphingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LTMorphingLabel.modulemap; sourceTree = "<group>"; };
+		CE9118E131ED104F087C86C67922B07F /* LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
+		CEB92F8C4B27D303B4E9A4EF658DD776 /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
+		CEE44F36B9B2EC93A4EFF353E00CE4DB /* Fire.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fire.png; path = LTMorphingLabel/Particles/Fire.png; sourceTree = "<group>"; };
+		D51BA740E5B750A248D87D8665186106 /* Pods_Watson_Dialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_Dialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB3ED7C69540F4D289F41BA84729BEA6 /* NSString+LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSString+LTMorphingLabel.swift"; path = "LTMorphingLabel/NSString+LTMorphingLabel.swift"; sourceTree = "<group>"; };
+		DD2E58F4CE406AA9E30928FAFBF58690 /* SwiftSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.xcconfig; sourceTree = "<group>"; };
+		DE894B6B46EE96CFF95DABFB59CE2E7E /* Pods-Watson_DialogTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watson_DialogTests-frameworks.sh"; sourceTree = "<group>"; };
+		E0EA4D4BE5CACB47A8496E5F4CDAEBAD /* Pods-Watson_DialogUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watson_DialogUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E4BB5374B7E4A7F19CB90CCC000D4550 /* UINavigationBar+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+TCCustomFont.m"; path = "CanvasLibrary/UINavigationBar+TCCustomFont.m"; sourceTree = "<group>"; };
+		E4CFFE33F30913D528B03AB47FAC0CD3 /* Canvas-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Canvas-umbrella.h"; sourceTree = "<group>"; };
+		E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E789D7EE7DD9E291BF06E8D78EDD220E /* CSAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSAnimation.m; path = CanvasLibrary/CSAnimation.m; sourceTree = "<group>"; };
+		EE594C0955209B91EB9311FA3EEC9490 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F114CE9A0165655567FF0B27B07B0E7F /* LTMorphingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTMorphingLabel-dummy.m"; sourceTree = "<group>"; };
+		F25776872C0979C1BE034E6C69F70D52 /* LTMorphingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTMorphingLabel.xcconfig; sourceTree = "<group>"; };
+		F709E9AC4848BF59B5D9C76BEC8869BE /* Pods-Watson_Dialog-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watson_Dialog-acknowledgements.plist"; sourceTree = "<group>"; };
+		F98B8749E58A9B8B23714FB031622299 /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		FA3D44CF197DA189C1C28CD3B7FBE5D7 /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Burn.swift"; path = "LTMorphingLabel/LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		FAC690843CD413A2E6B444516CBC6F88 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
+		FB2B15099A6C16EAB8AB377916F893A8 /* CSNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSNavigationController.m; path = CanvasLibrary/CSNavigationController.m; sourceTree = "<group>"; };
+		FB2EA8D67EBB76F81678E6321D837FDB /* Pods-Watson_DialogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watson_DialogTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBDB064132F99B2FEDB4180C4505D5F3 /* Pods-Watson_DialogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watson_DialogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC0A3BCC72D0325450569C0BA2D7CB85 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		FE47E0E7C8E8C1B11F0FABACF5A9E9C2 /* Pods-Watson_Dialog-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watson_Dialog-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E4EA1B394794C6A87EC7CD3AFB870DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F119C05F6408B9E0F8064AA86D77C0 /* Foundation.framework in Frameworks */,
+				5CF83FB2E49B3342A3C09B02E8F474D5 /* QuartzCore.framework in Frameworks */,
+				62821F4D42C187B437988C64DBA6E0C8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BFB8EFDFC86A1B3EA241792D4C36C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D788B76816727C1A62423110141CCF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53EF20A3541BC3E7C6F3FB713B58C66B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCB71131A2BA8A3E999A2F8941C929B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55267AEC820A1225F5106016A628FA95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EA40424DE05E3B7D83EDB3033EB1AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCD7C1CECB3CAF52F5B3818C09680A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DD03168F90B724A0EE13FCBC4D0E3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910A477B8028CFF2267C8C9B8791CCB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194F240E2777ABB596A2DB81BA4729E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5255AF85EA27F7DA8E0C3A319FD0A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03922B7F1B717152CE6151DA87D10C48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEE44F36B9B2EC93A4EFF353E00CE4DB /* Fire.png */,
+				231AAF98ED4FB5511374C09CD20AE84B /* Fragment.png */,
+				4E22CDBEBF37F315155F8A762BD9D590 /* Smoke.png */,
+				A85FE88AD1D1C17D269517520338F066 /* Sparkle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C0D54B6A29D9AFCD871A48CEBFBC8D5 /* Pods-Watson_DialogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE594C0955209B91EB9311FA3EEC9490 /* Info.plist */,
+				AF6CDABDD101C20029A8DCFAD7BF90D9 /* Pods-Watson_DialogUITests.modulemap */,
+				84A6093F816F687782852A1138DFD589 /* Pods-Watson_DialogUITests-acknowledgements.markdown */,
+				85E46CE28E04D19294C8913DFF853AFE /* Pods-Watson_DialogUITests-acknowledgements.plist */,
+				68501652431DB6EB8918F76C794331A7 /* Pods-Watson_DialogUITests-dummy.m */,
+				E0EA4D4BE5CACB47A8496E5F4CDAEBAD /* Pods-Watson_DialogUITests-frameworks.sh */,
+				36D60ECA2BE492098AD14B0F5526ADC1 /* Pods-Watson_DialogUITests-resources.sh */,
+				52E16D4554A600BB38B0037D87A348CC /* Pods-Watson_DialogUITests-umbrella.h */,
+				3C94B74A4B69B1AA28EA182B31D09991 /* Pods-Watson_DialogUITests.debug.xcconfig */,
+				FBDB064132F99B2FEDB4180C4505D5F3 /* Pods-Watson_DialogUITests.release.xcconfig */,
+			);
+			name = "Pods-Watson_DialogUITests";
+			path = "Target Support Files/Pods-Watson_DialogUITests";
+			sourceTree = "<group>";
+		};
+		7272D60A5C7540D6DFDED060867F32D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				455FCDF6BFE58AA95071DD6CBDE4895A /* Info.plist */,
+				CE0B4FEED4BD0F6368B96D19F9C30EED /* LTMorphingLabel.modulemap */,
+				F25776872C0979C1BE034E6C69F70D52 /* LTMorphingLabel.xcconfig */,
+				F114CE9A0165655567FF0B27B07B0E7F /* LTMorphingLabel-dummy.m */,
+				65DB642FF44B19297F8CA814BD6A5A2C /* LTMorphingLabel-prefix.pch */,
+				299ECD306B6461D45BDA3157F98F1D4D /* LTMorphingLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LTMorphingLabel";
+			sourceTree = "<group>";
+		};
+		7BEAD3C1206ECA4CFECCC62008BC88B7 /* Pods-Watson_Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				7F0C6A82413D7CBCCCED41B34D033EB3 /* Info.plist */,
+				35C104DC328B3E4D4FE0F08A09039A31 /* Pods-Watson_Dialog.modulemap */,
+				92E82AC57AA98E068FCF2F8F98499114 /* Pods-Watson_Dialog-acknowledgements.markdown */,
+				F709E9AC4848BF59B5D9C76BEC8869BE /* Pods-Watson_Dialog-acknowledgements.plist */,
+				C7CD4DAD4E9AF0AE2CF9963E5E7B1324 /* Pods-Watson_Dialog-dummy.m */,
+				FE47E0E7C8E8C1B11F0FABACF5A9E9C2 /* Pods-Watson_Dialog-frameworks.sh */,
+				9BC3514C3F86EF02BC9C4E92BC76ABB5 /* Pods-Watson_Dialog-resources.sh */,
+				697974DB18F111C6CEBB6439979ADFD6 /* Pods-Watson_Dialog-umbrella.h */,
+				3B0602937CA9B9514CB592677D5564C4 /* Pods-Watson_Dialog.debug.xcconfig */,
+				A226C379DBB5B790DECEFBE4240D1610 /* Pods-Watson_Dialog.release.xcconfig */,
+			);
+			name = "Pods-Watson_Dialog";
+			path = "Target Support Files/Pods-Watson_Dialog";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				D20F272AE9E0041CCB85EFF9AF4D63AE /* Pods */,
+				A04383EF8C4555CD5980F449AC07E909 /* Products */,
+				EA5998386DC9134D93FA43BF5B8B9E6C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F8F13E9181C69B8A3879DDD71303646 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E3C8A44B8DF1282E49B8BDFD973C18B /* Info.plist */,
+				8E6A2FB278448D10B96A7AE83C5ADB87 /* SwiftSiriWaveformView.modulemap */,
+				DD2E58F4CE406AA9E30928FAFBF58690 /* SwiftSiriWaveformView.xcconfig */,
+				CEB92F8C4B27D303B4E9A4EF658DD776 /* SwiftSiriWaveformView-dummy.m */,
+				49535FA159E8ADCF5D895F770FD32CFB /* SwiftSiriWaveformView-prefix.pch */,
+				3454501643ED31D937EACE335575AE17 /* SwiftSiriWaveformView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSiriWaveformView";
+			sourceTree = "<group>";
+		};
+		9F7EF7555BE321F5BF20D143B401BDBB /* Pods-Watson_DialogTests */ = {
+			isa = PBXGroup;
+			children = (
+				7805DA1385474078D867DCC5A65FCCF7 /* Info.plist */,
+				08F8746C9E6D8663487B3F8B78044030 /* Pods-Watson_DialogTests.modulemap */,
+				37137B553286EA839B765ECA264D8ED1 /* Pods-Watson_DialogTests-acknowledgements.markdown */,
+				9DD89FE4EC13F85A35132E3795CA6DA6 /* Pods-Watson_DialogTests-acknowledgements.plist */,
+				7CCA5DB8253CD714DD6F958B50BE5AA7 /* Pods-Watson_DialogTests-dummy.m */,
+				DE894B6B46EE96CFF95DABFB59CE2E7E /* Pods-Watson_DialogTests-frameworks.sh */,
+				6DCB0B0236D9833F15D6AB463E6F3DBC /* Pods-Watson_DialogTests-resources.sh */,
+				20E59C0AD866F34BC15692DDBF17E629 /* Pods-Watson_DialogTests-umbrella.h */,
+				0C7B58F217A349B4100AA924F473C286 /* Pods-Watson_DialogTests.debug.xcconfig */,
+				FB2EA8D67EBB76F81678E6321D837FDB /* Pods-Watson_DialogTests.release.xcconfig */,
+			);
+			name = "Pods-Watson_DialogTests";
+			path = "Target Support Files/Pods-Watson_DialogTests";
+			sourceTree = "<group>";
+		};
+		A04383EF8C4555CD5980F449AC07E909 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8F9579222BE47DDEA2A6A966827568B /* Canvas.framework */,
+				6D002F78568EA2C62E92431F62DCA012 /* LTMorphingLabel.framework */,
+				D51BA740E5B750A248D87D8665186106 /* Pods_Watson_Dialog.framework */,
+				8A1D6C890B110E13CFC4982444B7F573 /* Pods_Watson_DialogTests.framework */,
+				69A57CAE75DB75569723CACC2F71E4E4 /* Pods_Watson_DialogUITests.framework */,
+				95D2124B6D9D20FB7DF8B61E16DE985C /* SwiftSiriWaveformView.bundle */,
+				065513A20E9213D0CECA5B0FAAB6CFA5 /* SwiftSiriWaveformView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B558BF3FD742F827EFD919F29934AA7F /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				26917F00527DA21960EA975A3DE81779 /* Canvas.h */,
+				52F5D19AB6B84223D4A0472A2C49BDFA /* CSAnimation.h */,
+				E789D7EE7DD9E291BF06E8D78EDD220E /* CSAnimation.m */,
+				3AB9B80D50A1C062F2DB1EAED4254748 /* CSAnimationView.h */,
+				C1AB3E190757828837D9BEBF040C8DC5 /* CSAnimationView.m */,
+				10D0978325B1573C0BC643C13A80B6CA /* CSBlurView.h */,
+				BC532A5BD0B40518B22F301C00851A87 /* CSBlurView.m */,
+				917EE21AE247859CC899F345EEBCC8C5 /* CSNavigationController.h */,
+				FB2B15099A6C16EAB8AB377916F893A8 /* CSNavigationController.m */,
+				5C7A9A470CA37930D138B7ED9E674DA3 /* UIButton+TCCustomFont.h */,
+				732F3F4F5223D110A05D5CBD4FBD774B /* UIButton+TCCustomFont.m */,
+				8F5412C275D6824184208411E06B53CC /* UILabel+TCCustomFont.h */,
+				0E8CC5953FE42ADAA777327E7943FDAB /* UILabel+TCCustomFont.m */,
+				2C2E2B348712AC2951887E57BBDED8D8 /* UINavigationBar+TCCustomFont.h */,
+				E4BB5374B7E4A7F19CB90CCC000D4550 /* UINavigationBar+TCCustomFont.m */,
+				65ABE0832E81B8244A7B8EA9AE64B384 /* UITextField+PlaceholderColor.h */,
+				265C2261B01B84944E514E9F22C67DDA /* UITextField+PlaceholderColor.m */,
+				8CEB99D42A8CD9D2AEB20505365CD600 /* UITextField+TCCustomFont.h */,
+				392267ED6FBB34AB3EB00E156E202A49 /* UITextField+TCCustomFont.m */,
+				55BF919437ACE60C1EB0D8C4C59C4DA9 /* UITextView+TCCustomFont.h */,
+				63D5E489E985A4EA01B13A33B0349C89 /* UITextView+TCCustomFont.m */,
+				CC98886CC5CE5F2A4F7770435348CFBC /* Support Files */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		CC98886CC5CE5F2A4F7770435348CFBC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B68846D83327EAF8F4D31C0D3D2B673B /* Canvas.modulemap */,
+				C92187DEDE152B98E0DBEB1F4C8807E5 /* Canvas.xcconfig */,
+				9CCD43EADA8A635DE044EA31FBAC83D8 /* Canvas-dummy.m */,
+				1BA86F1AB715DB6C467AE5F7277425A8 /* Canvas-prefix.pch */,
+				E4CFFE33F30913D528B03AB47FAC0CD3 /* Canvas-umbrella.h */,
+				2974F5616F26F8727FA66FD3B3E009AA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Canvas";
+			sourceTree = "<group>";
+		};
+		D20F272AE9E0041CCB85EFF9AF4D63AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B558BF3FD742F827EFD919F29934AA7F /* Canvas */,
+				F7EB26ACE71CB30FFD8A23C0152A0DBA /* LTMorphingLabel */,
+				D24DD35D69F1797D4F6B32D8A228CA3B /* SwiftSiriWaveformView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D24DD35D69F1797D4F6B32D8A228CA3B /* SwiftSiriWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				FAC690843CD413A2E6B444516CBC6F88 /* SwiftSiriWaveformView.swift */,
+				8F8F13E9181C69B8A3879DDD71303646 /* Support Files */,
+			);
+			path = SwiftSiriWaveformView;
+			sourceTree = "<group>";
+		};
+		DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				91413329813FA6FE5A78842159E69621 /* Foundation.framework */,
+				E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */,
+				D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EA5998386DC9134D93FA43BF5B8B9E6C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BEAD3C1206ECA4CFECCC62008BC88B7 /* Pods-Watson_Dialog */,
+				9F7EF7555BE321F5BF20D143B401BDBB /* Pods-Watson_DialogTests */,
+				2C0D54B6A29D9AFCD871A48CEBFBC8D5 /* Pods-Watson_DialogUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F7EB26ACE71CB30FFD8A23C0152A0DBA /* LTMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				75F8AEE5BD58B679676C98F284FF120D /* LTCharacterLimbo.swift */,
+				C7DD71520F23F0F04840D56A1947DB0D /* LTEasing.swift */,
+				70F9E3C8560A9D21716E13A9F0AE040B /* LTEmitterView.swift */,
+				47E13743BF6EE018727065A2B9264B39 /* LTMorphingEffect.swift */,
+				7FBD96EF1EA09FCF763941D6E0CDFF48 /* LTMorphingLabel.h */,
+				CE9118E131ED104F087C86C67922B07F /* LTMorphingLabel.swift */,
+				805F95E3B45CC38877F397942DE2180E /* LTMorphingLabel+Anvil.swift */,
+				FA3D44CF197DA189C1C28CD3B7FBE5D7 /* LTMorphingLabel+Burn.swift */,
+				9A9E0A032CC0BF3003F4AD70BE88DD4E /* LTMorphingLabel+Evaporate.swift */,
+				F98B8749E58A9B8B23714FB031622299 /* LTMorphingLabel+Fall.swift */,
+				FC0A3BCC72D0325450569C0BA2D7CB85 /* LTMorphingLabel+Pixelate.swift */,
+				5417D2D06E3FEEB41E127229E06CD9AB /* LTMorphingLabel+Sparkle.swift */,
+				DB3ED7C69540F4D289F41BA84729BEA6 /* NSString+LTMorphingLabel.swift */,
+				03922B7F1B717152CE6151DA87D10C48 /* Resources */,
+				7272D60A5C7540D6DFDED060867F32D6 /* Support Files */,
+			);
+			path = LTMorphingLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17D25E9F2F34F457447C40FF18E2B497 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D989C6CF5D3FB6CD25E4B65A14F250C /* Pods-Watson_DialogUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D2DEE5F2ACADAF8DC0B4772E36CC6C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0DB59C5A2FC7EF534D4BFE1F45BFDC /* Canvas-umbrella.h in Headers */,
+				E064A372B02C1DB0F4DD763CAD500BA1 /* Canvas.h in Headers */,
+				4F3DF3C44C278FE44AD44BA7C7FFE416 /* CSAnimation.h in Headers */,
+				C9EA18F788CF76E49B34C3B12A42200D /* CSAnimationView.h in Headers */,
+				0035E280E2227924AC4E2F8B3D44EF6B /* CSBlurView.h in Headers */,
+				A2EAB23D235F8B41E28A14ADD16542A9 /* CSNavigationController.h in Headers */,
+				AE024FC0C6A794A8BC3B113BF63E836A /* UIButton+TCCustomFont.h in Headers */,
+				662C71BB07B541650F00C223691E8902 /* UILabel+TCCustomFont.h in Headers */,
+				DF9556B6C0FBC1894056CA9E9DFFC0E5 /* UINavigationBar+TCCustomFont.h in Headers */,
+				DB678D6A80AE82C0E08F121230FADB12 /* UITextField+PlaceholderColor.h in Headers */,
+				2B3C98BF6B534DD54B2918F45B66A324 /* UITextField+TCCustomFont.h in Headers */,
+				050D31F1ACF003324524127CC92E1C6F /* UITextView+TCCustomFont.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D0940DD84D170975E2BE5D46497BB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A83EA20A85C635A04A657D6E4D460E23 /* Pods-Watson_Dialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C240EC0C0673919055E3C243814C3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F02D96B52C9D8226030DABDD497830 /* Pods-Watson_DialogTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		886CF5D5BCD51C41B718D5A6C1C294EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B42D2606FF4087C458940EB8FAD9C65 /* SwiftSiriWaveformView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D1926C75235190BA2B9B1C7E872D15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA25E1C4EFB2B53764E95238C01FC541 /* LTMorphingLabel-umbrella.h in Headers */,
+				10DA04EC085D11D23E0E3F0DBABE5114 /* LTMorphingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0DCBD6C869DCC15AF62D43471CB4592C /* LTMorphingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD6BFD0F561BD7DC1612C7BF97AAE6BC /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */;
+			buildPhases = (
+				EC8FE24E635DC3E29FDF20CFAD47AE8F /* Sources */,
+				0E4EA1B394794C6A87EC7CD3AFB870DF /* Frameworks */,
+				B5D1926C75235190BA2B9B1C7E872D15 /* Headers */,
+				F9DBA014C64C012FFED946DB4F6F8A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTMorphingLabel;
+			productName = LTMorphingLabel;
+			productReference = 6D002F78568EA2C62E92431F62DCA012 /* LTMorphingLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		709A3BA8F5996187C214D1306BD5165E /* Pods-Watson_DialogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D8EE1B359C8D0E44F7DB9343B70995 /* Build configuration list for PBXNativeTarget "Pods-Watson_DialogUITests" */;
+			buildPhases = (
+				83160A74608A7DF9C44850700A793A51 /* Sources */,
+				6DCD7C1CECB3CAF52F5B3818C09680A1 /* Frameworks */,
+				17D25E9F2F34F457447C40FF18E2B497 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAECB4BA77364C1F7586EC7D9F05C2B9 /* PBXTargetDependency */,
+				946DBB6458BEDA34656529BDD4FB7740 /* PBXTargetDependency */,
+				5423E2D19E81F5A9479156674EA8FC8D /* PBXTargetDependency */,
+			);
+			name = "Pods-Watson_DialogUITests";
+			productName = "Pods-Watson_DialogUITests";
+			productReference = 69A57CAE75DB75569723CACC2F71E4E4 /* Pods_Watson_DialogUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		806AF7BEA4417071907EEE1730A3A4DA /* Pods-Watson_Dialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 355B7DEC50509098AF619C475339FB90 /* Build configuration list for PBXNativeTarget "Pods-Watson_Dialog" */;
+			buildPhases = (
+				A753F3A6BD104A101DE3219E7C159D2D /* Sources */,
+				53EF20A3541BC3E7C6F3FB713B58C66B /* Frameworks */,
+				45D0940DD84D170975E2BE5D46497BB0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A229B99A1F95B94A49327C213BE84CB3 /* PBXTargetDependency */,
+				680AC827CE1747D7B38A0175466911D9 /* PBXTargetDependency */,
+				34B8F1C0B9A56426D1D2731DA75AC796 /* PBXTargetDependency */,
+			);
+			name = "Pods-Watson_Dialog";
+			productName = "Pods-Watson_Dialog";
+			productReference = D51BA740E5B750A248D87D8665186106 /* Pods_Watson_Dialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80CBCC225074FD190F9BEA2940592423 /* Canvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F734F76098089EF9030FCCACD5766C7 /* Build configuration list for PBXNativeTarget "Canvas" */;
+			buildPhases = (
+				0A33DC707B44F030F5360D55F0E5C04D /* Sources */,
+				910A477B8028CFF2267C8C9B8791CCB6 /* Frameworks */,
+				1D2DEE5F2ACADAF8DC0B4772E36CC6C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Canvas;
+			productName = Canvas;
+			productReference = B8F9579222BE47DDEA2A6A966827568B /* Canvas.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8A3063B6C9B04071E9049049F48B265 /* Pods-Watson_DialogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DFE099B97D86DA85C557C355CC0C588 /* Build configuration list for PBXNativeTarget "Pods-Watson_DialogTests" */;
+			buildPhases = (
+				C16ECFAC73D3D340456BAD55EF6D79DE /* Sources */,
+				55267AEC820A1225F5106016A628FA95 /* Frameworks */,
+				72C240EC0C0673919055E3C243814C3A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BBD73DFD32F0631E3E5D8943F6DC738 /* PBXTargetDependency */,
+				6A218EC1065C80D0387FC0B64A3A2F7F /* PBXTargetDependency */,
+				0A441A7C222D1E0455CE6223EDE6C014 /* PBXTargetDependency */,
+			);
+			name = "Pods-Watson_DialogTests";
+			productName = "Pods-Watson_DialogTests";
+			productReference = 8A1D6C890B110E13CFC4982444B7F573 /* Pods_Watson_DialogTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA34A355D4498470F5AD7180AA3D78B4 /* SwiftSiriWaveformView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB834EE76DA22CC71BC73F5ADC279DA /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
+			buildPhases = (
+				4C4B2C1A43A064D4ABF779814BEB73C7 /* Sources */,
+				2BFB8EFDFC86A1B3EA241792D4C36C86 /* Frameworks */,
+				5404D45B6C0F0771A9A68D0747C675AF /* Resources */,
+				886CF5D5BCD51C41B718D5A6C1C294EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2538F983C9420806A5C811EA4E19CCD8 /* PBXTargetDependency */,
+			);
+			name = SwiftSiriWaveformView;
+			productName = SwiftSiriWaveformView;
+			productReference = 065513A20E9213D0CECA5B0FAAB6CFA5 /* SwiftSiriWaveformView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFD52F1345D56B64E1035498F5A6DC7C /* SwiftSiriWaveformView-SwiftSiriWaveformView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9AC8432AC373594A556ED657362C88 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView-SwiftSiriWaveformView" */;
+			buildPhases = (
+				F155F166CC93B695F4BCC089DD242476 /* Sources */,
+				DF5255AF85EA27F7DA8E0C3A319FD0A8 /* Frameworks */,
+				1FD2D576AEB87A59D1B38FBFEC1FC6F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftSiriWaveformView-SwiftSiriWaveformView";
+			productName = "SwiftSiriWaveformView-SwiftSiriWaveformView";
+			productReference = 95D2124B6D9D20FB7DF8B61E16DE985C /* SwiftSiriWaveformView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A04383EF8C4555CD5980F449AC07E909 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80CBCC225074FD190F9BEA2940592423 /* Canvas */,
+				0DCBD6C869DCC15AF62D43471CB4592C /* LTMorphingLabel */,
+				806AF7BEA4417071907EEE1730A3A4DA /* Pods-Watson_Dialog */,
+				C8A3063B6C9B04071E9049049F48B265 /* Pods-Watson_DialogTests */,
+				709A3BA8F5996187C214D1306BD5165E /* Pods-Watson_DialogUITests */,
+				CA34A355D4498470F5AD7180AA3D78B4 /* SwiftSiriWaveformView */,
+				EFD52F1345D56B64E1035498F5A6DC7C /* SwiftSiriWaveformView-SwiftSiriWaveformView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FD2D576AEB87A59D1B38FBFEC1FC6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5404D45B6C0F0771A9A68D0747C675AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D3EE6978B2F94ED8084FAA815FEABB /* SwiftSiriWaveformView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DBA014C64C012FFED946DB4F6F8A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF8DFA896A6618005B677B8793DBF0E /* Fire.png in Resources */,
+				04913062FB19F572704D1F80F24D0F1E /* Fragment.png in Resources */,
+				E64E0DA42FF43A0CE84FC8E07BA9C2F4 /* Smoke.png in Resources */,
+				573B13ABBF79FA6ABDACA8F14750D83F /* Sparkle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A33DC707B44F030F5360D55F0E5C04D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5703AD94DB5E55AF9A2D572CC81A08B /* Canvas-dummy.m in Sources */,
+				CB9EA82F545BB2D13A0B32FF3A9FFF1C /* CSAnimation.m in Sources */,
+				37437BE1DBC4C60EEF23B79D6C994BF8 /* CSAnimationView.m in Sources */,
+				B37A4CE3AE562C1B0715F69687E6644A /* CSBlurView.m in Sources */,
+				51DB856BD58ADC66EAF464260C9BB683 /* CSNavigationController.m in Sources */,
+				E0280B7E837B585206DACE6B58CBA14A /* UIButton+TCCustomFont.m in Sources */,
+				C12996EA896ABDF39A40FC94315EA238 /* UILabel+TCCustomFont.m in Sources */,
+				DAD9483A8C579DE8A0561E2EC91736EB /* UINavigationBar+TCCustomFont.m in Sources */,
+				FF638CC4A9134346D3A7831C880CF8CC /* UITextField+PlaceholderColor.m in Sources */,
+				F36FC5C3F71A1B956F4D4837202295AF /* UITextField+TCCustomFont.m in Sources */,
+				146EA652DBF62F28CFB6A3001693A9D8 /* UITextView+TCCustomFont.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4B2C1A43A064D4ABF779814BEB73C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB925E8D5E0EF07A8346E84D87503C42 /* SwiftSiriWaveformView-dummy.m in Sources */,
+				441F5E5D08D95F2CB24338F6C03614AA /* SwiftSiriWaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83160A74608A7DF9C44850700A793A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734DF067BCBFE07F41DB57C14CEAB1B0 /* Pods-Watson_DialogUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753F3A6BD104A101DE3219E7C159D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8915AEA53F1600BF6073C50DBBF13864 /* Pods-Watson_Dialog-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16ECFAC73D3D340456BAD55EF6D79DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B2D8EA2BEB709B46B24A957D5722FE /* Pods-Watson_DialogTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8FE24E635DC3E29FDF20CFAD47AE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DEC2D3601595D8C6850C8FB7173158 /* LTCharacterLimbo.swift in Sources */,
+				9CD2F676F12CF59997D469DC44040977 /* LTEasing.swift in Sources */,
+				94C184FAE53AE7FE2DAAF71250C88399 /* LTEmitterView.swift in Sources */,
+				35D1068A16F7B860DBF2FF11F7E88197 /* LTMorphingEffect.swift in Sources */,
+				87A5677A6AE8315FC08C7AFDA06C5E85 /* LTMorphingLabel+Anvil.swift in Sources */,
+				D40D84C336EB60A2349DA835277B3BB6 /* LTMorphingLabel+Burn.swift in Sources */,
+				82CCC01A0501720443407C7842A2F8EE /* LTMorphingLabel+Evaporate.swift in Sources */,
+				CFC6568F9625CFEDE89544D5E106EE56 /* LTMorphingLabel+Fall.swift in Sources */,
+				D7AF1C498BACC7A8145392B6E3AC91FB /* LTMorphingLabel+Pixelate.swift in Sources */,
+				401A7DAFE42E4A8D8B065ABB2B5028D1 /* LTMorphingLabel+Sparkle.swift in Sources */,
+				0B0B16FE44CBECB512D2FC308055C7BB /* LTMorphingLabel-dummy.m in Sources */,
+				09655714894296138E974CBC74484E5C /* LTMorphingLabel.swift in Sources */,
+				D4BEFE9697D2C98014CEA515831D78EC /* NSString+LTMorphingLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F155F166CC93B695F4BCC089DD242476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A441A7C222D1E0455CE6223EDE6C014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSiriWaveformView;
+			target = CA34A355D4498470F5AD7180AA3D78B4 /* SwiftSiriWaveformView */;
+			targetProxy = E84BEE9D80069D4BE4F0DDE769FBD2F2 /* PBXContainerItemProxy */;
+		};
+		2538F983C9420806A5C811EA4E19CCD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSiriWaveformView-SwiftSiriWaveformView";
+			target = EFD52F1345D56B64E1035498F5A6DC7C /* SwiftSiriWaveformView-SwiftSiriWaveformView */;
+			targetProxy = 675C834BCB655BB825CF97B5F52F5459 /* PBXContainerItemProxy */;
+		};
+		34B8F1C0B9A56426D1D2731DA75AC796 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSiriWaveformView;
+			target = CA34A355D4498470F5AD7180AA3D78B4 /* SwiftSiriWaveformView */;
+			targetProxy = 008C7CCA6CF49800E2C7FE320811D9EB /* PBXContainerItemProxy */;
+		};
+		5423E2D19E81F5A9479156674EA8FC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSiriWaveformView;
+			target = CA34A355D4498470F5AD7180AA3D78B4 /* SwiftSiriWaveformView */;
+			targetProxy = C63ACAE031E054076AD5EDC0E9A3E395 /* PBXContainerItemProxy */;
+		};
+		680AC827CE1747D7B38A0175466911D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LTMorphingLabel;
+			target = 0DCBD6C869DCC15AF62D43471CB4592C /* LTMorphingLabel */;
+			targetProxy = 90C3834F90DDE826657F699C0059A495 /* PBXContainerItemProxy */;
+		};
+		6A218EC1065C80D0387FC0B64A3A2F7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LTMorphingLabel;
+			target = 0DCBD6C869DCC15AF62D43471CB4592C /* LTMorphingLabel */;
+			targetProxy = 8C64DF2CFC0E8D38131531B01475F4C3 /* PBXContainerItemProxy */;
+		};
+		946DBB6458BEDA34656529BDD4FB7740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LTMorphingLabel;
+			target = 0DCBD6C869DCC15AF62D43471CB4592C /* LTMorphingLabel */;
+			targetProxy = BD8FEBC6EE8DE01107EA495FD456E137 /* PBXContainerItemProxy */;
+		};
+		9BBD73DFD32F0631E3E5D8943F6DC738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Canvas;
+			target = 80CBCC225074FD190F9BEA2940592423 /* Canvas */;
+			targetProxy = 0CDB8DD5AE0AC58CFC579866DE4D6373 /* PBXContainerItemProxy */;
+		};
+		A229B99A1F95B94A49327C213BE84CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Canvas;
+			target = 80CBCC225074FD190F9BEA2940592423 /* Canvas */;
+			targetProxy = 84872D95D62A7E65C0A1164841038667 /* PBXContainerItemProxy */;
+		};
+		DAECB4BA77364C1F7586EC7D9F05C2B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Canvas;
+			target = 80CBCC225074FD190F9BEA2940592423 /* Canvas */;
+			targetProxy = FA49927244683E8AF793C3DD4A5E6835 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AFDF71755E26F80CD1E19A9DA67E4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2E58F4CE406AA9E30928FAFBF58690 /* SwiftSiriWaveformView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		19DECA35CE569A091CF4BEE41D60D407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92187DEDE152B98E0DBEB1F4C8807E5 /* Canvas.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Canvas/Canvas-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Canvas/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Canvas/Canvas.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Canvas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2AB10723C7DEEC2FCC9C7F7C293DCCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2EA8D67EBB76F81678E6321D837FDB /* Pods-Watson_DialogTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Watson_DialogTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watson_DialogTests/Pods-Watson_DialogTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Watson_DialogTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F163FF02E09ADEAD5D1CB155B274330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2E58F4CE406AA9E30928FAFBF58690 /* SwiftSiriWaveformView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		600E1C94A8149AE1AD1A29652432AAE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25776872C0979C1BE034E6C69F70D52 /* LTMorphingLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LTMorphingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86B8C1EC8E5D13863A779884B9A9D248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2E58F4CE406AA9E30928FAFBF58690 /* SwiftSiriWaveformView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8D9D207BF384648AE96EBD0F367BBA41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0602937CA9B9514CB592677D5564C4 /* Pods-Watson_Dialog.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Watson_Dialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watson_Dialog/Pods-Watson_Dialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Watson_Dialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99A7BFAAF9DF449E0D6037240892A016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2E58F4CE406AA9E30928FAFBF58690 /* SwiftSiriWaveformView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A5FE95814B1B5F74AF91961645B4B352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C94B74A4B69B1AA28EA182B31D09991 /* Pods-Watson_DialogUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Watson_DialogUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watson_DialogUITests/Pods-Watson_DialogUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Watson_DialogUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A90DB3F03493ABB5A7407284F30DB437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDB064132F99B2FEDB4180C4505D5F3 /* Pods-Watson_DialogUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Watson_DialogUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watson_DialogUITests/Pods-Watson_DialogUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Watson_DialogUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF6820F989223A8394D67CB3C12D4587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92187DEDE152B98E0DBEB1F4C8807E5 /* Canvas.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Canvas/Canvas-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Canvas/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Canvas/Canvas.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Canvas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4F400809D2A2E62DB4E3B8106FF4328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A226C379DBB5B790DECEFBE4240D1610 /* Pods-Watson_Dialog.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Watson_Dialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watson_Dialog/Pods-Watson_Dialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Watson_Dialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E44162DC11FB5F9952B8AF48DD798197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25776872C0979C1BE034E6C69F70D52 /* LTMorphingLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LTMorphingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FED8CA82EE87EA40ACDE784AFE35EA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7B58F217A349B4100AA924F473C286 /* Pods-Watson_DialogTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Watson_DialogTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watson_DialogTests/Pods-Watson_DialogTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Watson_DialogTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		355B7DEC50509098AF619C475339FB90 /* Build configuration list for PBXNativeTarget "Pods-Watson_Dialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9D207BF384648AE96EBD0F367BBA41 /* Debug */,
+				D4F400809D2A2E62DB4E3B8106FF4328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DFE099B97D86DA85C557C355CC0C588 /* Build configuration list for PBXNativeTarget "Pods-Watson_DialogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED8CA82EE87EA40ACDE784AFE35EA2C /* Debug */,
+				2AB10723C7DEEC2FCC9C7F7C293DCCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F734F76098089EF9030FCCACD5766C7 /* Build configuration list for PBXNativeTarget "Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DECA35CE569A091CF4BEE41D60D407 /* Debug */,
+				CF6820F989223A8394D67CB3C12D4587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D8EE1B359C8D0E44F7DB9343B70995 /* Build configuration list for PBXNativeTarget "Pods-Watson_DialogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FE95814B1B5F74AF91961645B4B352 /* Debug */,
+				A90DB3F03493ABB5A7407284F30DB437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACB834EE76DA22CC71BC73F5ADC279DA /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86B8C1EC8E5D13863A779884B9A9D248 /* Debug */,
+				5F163FF02E09ADEAD5D1CB155B274330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD6BFD0F561BD7DC1612C7BF97AAE6BC /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600E1C94A8149AE1AD1A29652432AAE2 /* Debug */,
+				E44162DC11FB5F9952B8AF48DD798197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9AC8432AC373594A556ED657362C88 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView-SwiftSiriWaveformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFDF71755E26F80CD1E19A9DA67E4B9 /* Debug */,
+				99A7BFAAF9DF449E0D6037240892A016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

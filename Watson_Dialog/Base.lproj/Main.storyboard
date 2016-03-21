@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="emV-S6-6Ri">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -14,17 +14,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVe-Wm-xSK">
                                 <rect key="frame" x="465" y="258" width="201" height="201"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owj-UI-6VL">
-                                <rect key="frame" x="92" y="44" width="840" height="680"/>
+                                <rect key="frame" x="-36" y="172" width="840" height="680"/>
                                 <state key="normal" title="    "/>
                                 <connections>
-                                    <segue destination="emV-S6-6Ri" kind="show" id="4fO-y7-0zY"/>
+                                    <segue destination="emV-S6-6Ri" kind="showDetail" id="P39-rN-wFg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,7 +39,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="imageView" destination="AVe-Wm-xSK" id="EQI-4C-qnU"/>
@@ -47,95 +47,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-903" y="342"/>
+            <point key="canvasLocation" x="249" y="294"/>
         </scene>
         <!--SecondView-->
         <scene sceneID="fok-uv-3Dw">
             <objects>
-                <viewController title="SecondView" id="emV-S6-6Ri" customClass="SecondViewController" customModule="Watson_Dialog" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondView" title="SecondView" id="emV-S6-6Ri" customClass="SecondViewController" customModule="Watson_Dialog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="18N-JG-C7e"/>
                         <viewControllerLayoutGuide type="bottom" id="Kd8-VY-tNe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z4m-XB-fcw">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="&quot;Are you a student? I'll have to see if you're eligible for an SPC Card.&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-Mx-wVG">
-                                <rect key="frame" x="357" y="397" width="301" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="do you connect points? Are you looking for a card with yearly fee or no fee? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9n-1N-4ll">
-                                <rect key="frame" x="218" y="435" width="578" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1Z-dP-yo6">
-                                <rect key="frame" x="454" y="472" width="106" height="21"/>
-                                <string key="text">Travel points?
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Are you a student? Is there a particular brand you’re looking for? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW4-bu-PmZ">
-                                <rect key="frame" x="260" y="508" width="495" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Are you a student? Is there a particular brand you’re looking for? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlA-aF-7Lf">
-                                <rect key="frame" x="260" y="546" width="495" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-xV-Qvf">
-                                <rect key="frame" x="500" y="52" width="25" height="23"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" restorationIdentifier="hello" text="Good afternoon Andrew, how can I help you today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rve-l5-T55">
-                                <rect key="frame" x="387" y="361" width="240" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" restorationIdentifier="hello" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rve-l5-T55" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="176" y="328" width="416" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJg-gl-Y1A">
-                                <rect key="frame" x="496" y="204" width="12" height="13"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-xV-Qvf">
+                                <rect key="frame" x="307" y="77" width="154" height="146"/>
                             </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQw-Dy-t4N" customClass="SwiftSiriWaveformView" customModule="SwiftSiriWaveformView">
+                                <rect key="frame" x="59" y="383" width="680" height="164"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rve-l5-T55" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="Bc3-Wj-HHX"/>
-                            <constraint firstItem="t1Z-dP-yo6" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="Rvh-4g-zA5"/>
-                            <constraint firstItem="H9n-1N-4ll" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="TS1-wR-yZg"/>
-                            <constraint firstItem="rlA-aF-7Lf" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="hHq-5y-pCU"/>
-                            <constraint firstItem="HJg-gl-Y1A" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="hMT-Dj-PiW"/>
-                            <constraint firstItem="RRX-xV-Qvf" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="iog-7S-87b"/>
-                            <constraint firstItem="BW4-bu-PmZ" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="uX4-rH-lHN"/>
-                            <constraint firstItem="pKa-Mx-wVG" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="vGX-Nh-f4i"/>
+                            <constraint firstItem="Rve-l5-T55" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="3fX-Bo-Oqe"/>
+                            <constraint firstItem="RRX-xV-Qvf" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="ZAr-OL-qWd"/>
+                            <constraint firstItem="Rve-l5-T55" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="dNg-Pk-I7N"/>
+                            <constraint firstItem="AQw-Dy-t4N" firstAttribute="centerX" secondItem="z4m-XB-fcw" secondAttribute="centerX" id="wHf-5O-rSm"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="hello" destination="Rve-l5-T55" id="cQe-zo-WUk"/>
+                        <outlet property="audioView" destination="AQw-Dy-t4N" id="xZ4-dh-4lB"/>
+                        <outlet property="hello" destination="Rve-l5-T55" id="KgA-NK-MYW"/>
                         <outlet property="imageView" destination="RRX-xV-Qvf" id="gLd-4q-ar1"/>
-                        <outlet property="siriImageView" destination="HJg-gl-Y1A" id="0fN-GC-w1M"/>
-                        <outlet property="watson2" destination="pKa-Mx-wVG" id="nKE-ja-ndW"/>
-                        <outlet property="watson3" destination="H9n-1N-4ll" id="a5G-IW-xfY"/>
-                        <outlet property="watson4" destination="t1Z-dP-yo6" id="wLE-OC-CbD"/>
-                        <outlet property="watson5" destination="BW4-bu-PmZ" id="hxC-WS-dyq"/>
-                        <outlet property="watson6" destination="rlA-aF-7Lf" id="zHD-YO-2Po"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBP-7C-KdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="388"/>
+            <point key="canvasLocation" x="-733" y="248"/>
         </scene>
     </scenes>
 </document>
