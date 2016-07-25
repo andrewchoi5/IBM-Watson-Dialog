@@ -1,24 +1,26 @@
-// ParameterEncodingTests.swift
 //
-// Copyright (c) 2014–2015 Alamofire Software Foundation (http://alamofire.org/)
+//  ParameterEncodingTests.swift
 //
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
+//  Copyright (c) 2014-2016 Alamofire Software Foundation (http://alamofire.org/)
 //
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 import Alamofire
 import Foundation
@@ -40,6 +42,17 @@ class URLParameterEncodingTestCase: ParameterEncodingTestCase {
         // When
         let (URLRequest, _) = encoding.encode(self.URLRequest, parameters: nil)
 
+        // Then
+        XCTAssertNil(URLRequest.URL?.query, "query should be nil")
+    }
+    
+    func testURLParameterEncodeEmptyDictionaryParameter() {
+        // Given
+        let parameters: [String: AnyObject] = [:]
+        
+        // When
+        let (URLRequest, _) = encoding.encode(self.URLRequest, parameters: parameters)
+        
         // Then
         XCTAssertNil(URLRequest.URL?.query, "query should be nil")
     }
@@ -488,6 +501,22 @@ class JSONParameterEncodingTestCase: ParameterEncodingTestCase {
             XCTFail("JSON should not be nil")
         }
     }
+
+    func testJSONParameterEncodeParametersRetainsCustomContentType() {
+        // Given
+        let mutableURLRequest = NSMutableURLRequest(URL: NSURL(string: "https://example.com/")!)
+        mutableURLRequest.setValue("application/custom-json-type+json", forHTTPHeaderField: "Content-Type")
+
+        let parameters = ["foo": "bar"]
+
+        // When
+        let (URLRequest, error) = encoding.encode(mutableURLRequest, parameters: parameters)
+
+        // Then
+        XCTAssertNil(error)
+        XCTAssertNil(URLRequest.URL?.query)
+        XCTAssertEqual(URLRequest.valueForHTTPHeaderField("Content-Type"), "application/custom-json-type+json")
+    }
 }
 
 // MARK: -
@@ -595,6 +624,22 @@ class PropertyListParameterEncodingTestCase: ParameterEncodingTestCase {
             XCTFail("HTTPBody should not be nil")
         }
     }
+
+    func testPropertyListParameterEncodeParametersRetainsCustomContentType() {
+        // Given
+        let mutableURLRequest = NSMutableURLRequest(URL: NSURL(string: "https://example.com/")!)
+        mutableURLRequest.setValue("application/custom-plist-type+plist", forHTTPHeaderField: "Content-Type")
+
+        let parameters = ["foo": "bar"]
+
+        // When
+        let (URLRequest, error) = encoding.encode(mutableURLRequest, parameters: parameters)
+
+        // Then
+        XCTAssertNil(error)
+        XCTAssertNil(URLRequest.URL?.query)
+        XCTAssertEqual(URLRequest.valueForHTTPHeaderField("Content-Type"), "application/custom-plist-type+plist")
+    }
 }
 
 // MARK: -
@@ -605,8 +650,15 @@ class CustomParameterEncodingTestCase: ParameterEncodingTestCase {
     func testCustomParameterEncode() {
         // Given
         let encodingClosure: (URLRequestConvertible, [String: AnyObject]?) -> (NSMutableURLRequest, NSError?) = { URLRequest, parameters in
-            let mutableURLRequest = URLRequest.URLRequest.URLRequest
-            mutableURLRequest.setValue("Xcode", forHTTPHeaderField: "User-Agent")
+            guard let parameters = parameters else { return (URLRequest.URLRequest, nil) }
+
+            var URLString = URLRequest.URLRequest.URLString + "?"
+
+            parameters.forEach { URLString += "\($0)=\($1)" }
+
+            let mutableURLRequest = URLRequest.URLRequest
+            mutableURLRequest.URL = NSURL(string: URLString)!
+
             return (mutableURLRequest, nil)
         }
 
@@ -616,12 +668,12 @@ class CustomParameterEncodingTestCase: ParameterEncodingTestCase {
         // Then
         let URL = NSURL(string: "https://example.com")!
         let URLRequest = NSURLRequest(URL: URL)
-        let parameters: [String: AnyObject] = [:]
+        let parameters: [String: AnyObject] = ["foo": "bar"]
 
         XCTAssertEqual(
-            encoding.encode(URLRequest, parameters: parameters).0,
-            encodingClosure(URLRequest, parameters).0,
-            "URLRequest should be equal"
+            encoding.encode(URLRequest, parameters: parameters).0.URLString,
+            "https://example.com?foo=bar",
+            "the encoded URL should match the expected value"
         )
     }
 }
