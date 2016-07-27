@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		757273D55AE20AE4F12FCF65 /* Pods_Watson_Dialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF6E8270770781299612032 /* Pods_Watson_Dialog.framework */; };
+		757273D55AE20AE4F12FCF65 /* Pods_Watson_Dialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF6E8270770781299612032 /* Pods_Watson_Dialog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9614456C1C91DBAE00685E65 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9614456B1C91DBAE00685E65 /* UIViewExtensions.swift */; };
-		9627F0F81C976E5E006BCD89 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F11C976E5E006BCD89 /* Alamofire.framework */; };
-		9627F0F91C976E5E006BCD89 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F21C976E5E006BCD89 /* AlamofireObjectMapper.framework */; };
-		9627F0FA1C976E5E006BCD89 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */; };
-		9627F0FB1C976E5E006BCD89 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */; };
-		9627F0FC1C976E5E006BCD89 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F51C976E5E006BCD89 /* Starscream.framework */; };
-		9627F0FE1C976E5E006BCD89 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F71C976E5E006BCD89 /* XCGLogger.framework */; };
-		9627F1001C976E78006BCD89 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F11C976E5E006BCD89 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9627F1011C976E78006BCD89 /* AlamofireObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F21C976E5E006BCD89 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9627F1021C976E78006BCD89 /* HTTPStatusCodes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9627F1031C976E78006BCD89 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9627F1041C976E78006BCD89 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F51C976E5E006BCD89 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9627F1061C976E78006BCD89 /* XCGLogger.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F71C976E5E006BCD89 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9627F0F81C976E5E006BCD89 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F11C976E5E006BCD89 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9627F0F91C976E5E006BCD89 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F21C976E5E006BCD89 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9627F0FA1C976E5E006BCD89 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9627F0FB1C976E5E006BCD89 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9627F0FC1C976E5E006BCD89 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F51C976E5E006BCD89 /* Starscream.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9627F0FE1C976E5E006BCD89 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F71C976E5E006BCD89 /* XCGLogger.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9627F1001C976E78006BCD89 /* Alamofire.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9627F0F11C976E5E006BCD89 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9627F1011C976E78006BCD89 /* AlamofireObjectMapper.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9627F0F21C976E5E006BCD89 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9627F1021C976E78006BCD89 /* HTTPStatusCodes.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9627F1031C976E78006BCD89 /* ObjectMapper.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9627F1041C976E78006BCD89 /* Starscream.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9627F0F51C976E5E006BCD89 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9627F1061C976E78006BCD89 /* XCGLogger.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9627F0F71C976E5E006BCD89 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627F15C1C976EBA006BCD89 /* logo-1 (dragged).png in Resources */ = {isa = PBXBuildFile; fileRef = 9627F1071C976EBA006BCD89 /* logo-1 (dragged).png */; };
 		9627F15D1C976EBA006BCD89 /* logo-2 (dragged).png in Resources */ = {isa = PBXBuildFile; fileRef = 9627F1081C976EBA006BCD89 /* logo-2 (dragged).png */; };
 		9627F15E1C976EBA006BCD89 /* logo-3 (dragged).png in Resources */ = {isa = PBXBuildFile; fileRef = 9627F1091C976EBA006BCD89 /* logo-3 (dragged).png */; };
@@ -113,9 +113,12 @@
 		967B4BE61C8E561500D538CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967B4BE41C8E561500D538CE /* LaunchScreen.storyboard */; };
 		967B4BF11C8E561500D538CE /* Watson_DialogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B4BF01C8E561500D538CE /* Watson_DialogTests.swift */; };
 		967B4BFC1C8E561500D538CE /* Watson_DialogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B4BFB1C8E561500D538CE /* Watson_DialogUITests.swift */; };
-		9693F8651C99C67E00341690 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9693F8641C99C67E00341690 /* LTMorphingLabel.framework */; };
-		9693F8661C99C6A000341690 /* LTMorphingLabel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9693F8641C99C67E00341690 /* LTMorphingLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9693F8651C99C67E00341690 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9693F8641C99C67E00341690 /* LTMorphingLabel.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9693F8661C99C6A000341690 /* LTMorphingLabel.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9693F8641C99C67E00341690 /* LTMorphingLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		969DDD941D493D4F004A3507 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C377091D491965005D9D22 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		96B605C01C8F38E1004ABBE1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B605BF1C8F38E1004ABBE1 /* SecondViewController.swift */; };
+		96B7557E1D494CF8005A40BF /* Pods_Watson_Dialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF6E8270770781299612032 /* Pods_Watson_Dialog.framework */; };
+		96B7557F1D494CF8005A40BF /* Pods_Watson_Dialog.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 7CF6E8270770781299612032 /* Pods_Watson_Dialog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,20 +139,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9627F0FF1C976E6C006BCD89 /* CopyFiles */ = {
+		9627F0FF1C976E6C006BCD89 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9693F8661C99C6A000341690 /* LTMorphingLabel.framework in CopyFiles */,
-				9627F1001C976E78006BCD89 /* Alamofire.framework in CopyFiles */,
-				9627F1011C976E78006BCD89 /* AlamofireObjectMapper.framework in CopyFiles */,
-				9627F1021C976E78006BCD89 /* HTTPStatusCodes.framework in CopyFiles */,
-				9627F1031C976E78006BCD89 /* ObjectMapper.framework in CopyFiles */,
-				9627F1041C976E78006BCD89 /* Starscream.framework in CopyFiles */,
-				9627F1061C976E78006BCD89 /* XCGLogger.framework in CopyFiles */,
+				9693F8661C99C6A000341690 /* LTMorphingLabel.framework in Copy Files */,
+				9627F1001C976E78006BCD89 /* Alamofire.framework in Copy Files */,
+				9627F1011C976E78006BCD89 /* AlamofireObjectMapper.framework in Copy Files */,
+				9627F1021C976E78006BCD89 /* HTTPStatusCodes.framework in Copy Files */,
+				9627F1031C976E78006BCD89 /* ObjectMapper.framework in Copy Files */,
+				9627F1041C976E78006BCD89 /* Starscream.framework in Copy Files */,
+				96B7557F1D494CF8005A40BF /* Pods_Watson_Dialog.framework in Copy Files */,
+				9627F1061C976E78006BCD89 /* XCGLogger.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -266,6 +271,7 @@
 		967B4BFD1C8E561500D538CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9693F8641C99C67E00341690 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
 		96B605BF1C8F38E1004ABBE1 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		96C377091D491965005D9D22 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = /Users/andrewchoi5/Desktop/P/Watson_Dialog/Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<absolute>"; };
 		C7E5B0AB56591F35986B37CA /* Pods-Watson_Dialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_Dialog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_Dialog/Pods-Watson_Dialog.release.xcconfig"; sourceTree = "<group>"; };
 		DE34606709A312D8109B65AD /* Pods-Watson_DialogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_DialogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_DialogTests/Pods-Watson_DialogTests.release.xcconfig"; sourceTree = "<group>"; };
 		EFCB70D5102070A9E107A322 /* Pods-Watson_Dialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_Dialog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_Dialog/Pods-Watson_Dialog.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,11 +282,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969DDD941D493D4F004A3507 /* TextToSpeechV1.framework in Frameworks */,
 				9627F0F81C976E5E006BCD89 /* Alamofire.framework in Frameworks */,
 				9627F0F91C976E5E006BCD89 /* AlamofireObjectMapper.framework in Frameworks */,
 				9693F8651C99C67E00341690 /* LTMorphingLabel.framework in Frameworks */,
 				9627F0FB1C976E5E006BCD89 /* ObjectMapper.framework in Frameworks */,
 				9627F0FE1C976E5E006BCD89 /* XCGLogger.framework in Frameworks */,
+				96B7557E1D494CF8005A40BF /* Pods_Watson_Dialog.framework in Frameworks */,
 				9627F0FC1C976E5E006BCD89 /* Starscream.framework in Frameworks */,
 				9627F0FA1C976E5E006BCD89 /* HTTPStatusCodes.framework in Frameworks */,
 				757273D55AE20AE4F12FCF65 /* Pods_Watson_Dialog.framework in Frameworks */,
@@ -491,7 +499,7 @@
 				967B4BD41C8E561500D538CE /* Sources */,
 				967B4BD51C8E561500D538CE /* Frameworks */,
 				967B4BD61C8E561500D538CE /* Resources */,
-				9627F0FF1C976E6C006BCD89 /* CopyFiles */,
+				9627F0FF1C976E6C006BCD89 /* Copy Files */,
 				7112CA994DB8A6ADF9BBD398 /* Embed Pods Frameworks */,
 				44669324AC6D582AEB5FB870 /* Copy Pods Resources */,
 				96B15DAD1C99C7A7005116F9 /* ShellScript */,
@@ -992,9 +1000,11 @@
 			baseConfigurationReference = EFCB70D5102070A9E107A322 /* Pods-Watson_Dialog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Watson_Dialog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1008,9 +1018,11 @@
 			baseConfigurationReference = C7E5B0AB56591F35986B37CA /* Pods-Watson_Dialog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Watson_Dialog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

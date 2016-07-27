@@ -1,7 +1,9 @@
 import Foundation
 import UIKit
 import AVFoundation
-import WatsonDeveloperCloud
+import TextToSpeechV1
+import SpeechToTextV1
+//import NaturalLanguageClassifierV1
 import LTMorphingLabel
 
 class ViewController: UIViewController {

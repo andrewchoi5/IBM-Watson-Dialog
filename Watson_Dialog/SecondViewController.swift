@@ -1,7 +1,9 @@
 import Foundation
 import UIKit
 import AVFoundation
-import WatsonDeveloperCloud
+import TextToSpeechV1
+import SpeechToTextV1
+import NaturalLanguageClassifierV1
 import LTMorphingLabel
 import SwiftSiriWaveformView
 class SecondViewController: UIViewController {
@@ -75,126 +77,142 @@ class SecondViewController: UIViewController {
                 self.hello.text = s1
 //                self.hello.font = UIFont(name: "Apple SD Gothic Neo", size: self.s)
                 self.hello.fadeIn()
+            
+        
+             var synthesizer = AVSpeechSynthesizer()
+                let speechUtterance = AVSpeechUtterance(string: "Hello World!")
+                let voice = AVSpeechSynthesisVoice(language: "es-MX")
+                speechUtterance.voice = voice
+                let voices = AVSpeechSynthesisVoice.speechVoices()
+                print(voices)
+                synthesizer.speakUtterance(speechUtterance)
                 
-                tts.synthesize(s1) { //GB_Kate //US_Allison //US_Lisa
-                    data, error in
-                    if let audio = data {
-                        do {
-                            self.player = try AVAudioPlayer(data: audio)
-                            self.player!.play()
-                        } catch {
-                            print("Couldn't create player.")
-                        }
-                    }
-                }
-            delay(3.0){ // 1.5st
-                self.timer?.invalidate()
-//                self.timer = nil
-                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
-                delay(6.0) { //2nd
-                    self.timer?.invalidate()
-//                    self.timer = nil
-//                    self.audioView.amplitude = 0.0
-                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
-                        self.hello.text = s2
-                        tts.synthesize("I can help reduce your monthly interest payments. Would you like to do so?") {
-                            data, error in
-                            if let audio = data {
-                                do {
-                                    self.player = try AVAudioPlayer(data: audio)
-                                    self.player!.play()
-                                } catch {
-                                    print("Couldn't create player.")
-                                }
-                            }
-                        }
-                    delay(4.0){ //2.5nd delay
-                        self.timer?.invalidate()
-//                        self.timer = nil
-                        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
-                        delay(5.0) { //3rd
-                            self.timer?.invalidate()
-//                            self.timer = nil
-                            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
-                                self.hello.text = s3
-                                tts.synthesize(s3) {//en-US_AllisonVoice
-                                    data, error in
-                                    if let audio = data {
-                                        do {
-                                            self.player = try AVAudioPlayer(data: audio)
-                                            self.player!.play()
-                                        } catch {
-                                            print("Couldn't create player.")
-                                        }
-                                    }
-                                }
-                            delay(11.0){//3.5rd delay
-                                self.timer?.invalidate()
-//                                self.timer = nil
-                                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
-                                delay(5.0) { //4th
-                                    self.timer?.invalidate()
-                                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
-                                    self.hello.text = s4
-                                    tts.synthesize(s4) {//en-US_AllisonVoice
-                                        data, error in
-                                        if let audio = data {
-                                            do {
-                                                self.player = try AVAudioPlayer(data: audio)
-                                                self.player!.play()
-                                            } catch {
-                                                print("Couldn't create player.")
-                                            }
-                                        }
-                                    }
-                                    delay(3.0){//4.5th
-                                        self.timer?.invalidate()
-//                                        self.timer = nil
-                                        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
-                                        delay(5.0) { //5th
-                                            self.timer?.invalidate()
-                                            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
-                                            self.hello.text = s5
-                                            tts.synthesize(s5) {//en-US_AllisonVoice
-                                                data, error in
-                                                if let audio = data {
-                                                    do {
-                                                        self.player = try AVAudioPlayer(data: audio)
-                                                        self.player!.play()
-                                                    } catch {
-                                                        print("Couldn't create player.")
-                                                    }
-                                                }
-                                            }
-                                            delay(5.0){//5.5th
-                                                self.timer?.invalidate()
-                                                self.timer = nil
-                                                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
-                                                delay(5.0) { //6th
-                                                    self.timer?.invalidate()
-                                                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
-                                                    self.hello.text = s6
-                                                    tts.synthesize(s6) {//en-US_AllisonVoice
-                                                        data, error in
-                                                        if let audio = data {
-                                                            do {
-                                                                self.player = try AVAudioPlayer(data: audio)
-                                                                self.player!.play()
-                                                            } catch {
-                                                                print("Couldn't create player.")
-                                                            }
-                                                        }
-                                                    }
-                                                }//last delay 6th
-                                            }//5.5th delay
-                                        }// 5th delay
-                                    }//4.5th delay
-                                }// 4th delay
-                            }//3.5rd delay
-                        }// 3rd delay
-                    }//2.5nd delay
-                }// 2nd delay
-            }//1.5st delay
+            
+            
+            
+            
+            
+            
+//            
+//                tts.synthesize(s1) { data, error in
+//                    if let audio = data {
+//                        do {
+//                            self.player = try AVAudioPlayer(data: audio)
+//                            self.player!.play()
+//                        } catch {
+//                            print("Couldn't create player.")
+//                        }
+//                    }
+//                }
+//            delay(3.0){ // 1.5st
+//                self.timer?.invalidate()
+////                self.timer = nil
+//                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+//                delay(6.0) { //2nd
+//                    self.timer?.invalidate()
+////                    self.timer = nil
+////                    self.audioView.amplitude = 0.0
+//                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+//                        self.hello.text = s2
+//                        tts.synthesize("I can help reduce your monthly interest payments. Would you like to do so?") {
+//                            data, error in
+//                            if let audio = data {
+//                                do {
+//                                    self.player = try AVAudioPlayer(data: audio)
+//                                    self.player!.play()
+//                                } catch {
+//                                    print("Couldn't create player.")
+//                                }
+//                            }
+//                        }
+//                    delay(4.0){ //2.5nd delay
+//                        self.timer?.invalidate()
+////                        self.timer = nil
+//                        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+//                        delay(5.0) { //3rd
+//                            self.timer?.invalidate()
+////                            self.timer = nil
+//                            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+//                                self.hello.text = s3
+//                                tts.synthesize(s3) {//en-US_AllisonVoice
+//                                    data, error in
+//                                    if let audio = data {
+//                                        do {
+//                                            self.player = try AVAudioPlayer(data: audio)
+//                                            self.player!.play()
+//                                        } catch {
+//                                            print("Couldn't create player.")
+//                                        }
+//                                    }
+//                                }
+//                            delay(11.0){//3.5rd delay
+//                                self.timer?.invalidate()
+////                                self.timer = nil
+//                                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+//                                delay(5.0) { //4th
+//                                    self.timer?.invalidate()
+//                                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+//                                    self.hello.text = s4
+//                                    tts.synthesize(s4) {//en-US_AllisonVoice
+//                                        data, error in
+//                                        if let audio = data {
+//                                            do {
+//                                                self.player = try AVAudioPlayer(data: audio)
+//                                                self.player!.play()
+//                                            } catch {
+//                                                print("Couldn't create player.")
+//                                            }
+//                                        }
+//                                    }
+//                                    delay(3.0){//4.5th
+//                                        self.timer?.invalidate()
+////                                        self.timer = nil
+//                                        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+//                                        delay(5.0) { //5th
+//                                            self.timer?.invalidate()
+//                                            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+//                                            self.hello.text = s5
+//                                            tts.synthesize(s5) {//en-US_AllisonVoice
+//                                                data, error in
+//                                                if let audio = data {
+//                                                    do {
+//                                                        self.player = try AVAudioPlayer(data: audio)
+//                                                        self.player!.play()
+//                                                    } catch {
+//                                                        print("Couldn't create player.")
+//                                                    }
+//                                                }
+//                                            }
+//                                            delay(5.0){//5.5th
+//                                                self.timer?.invalidate()
+//                                                self.timer = nil
+//                                                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "refreshAudioView:", userInfo: nil, repeats: true)
+//                                                delay(5.0) { //6th
+//                                                    self.timer?.invalidate()
+//                                                    self.timer = NSTimer.scheduledTimerWithTimeInterval(0.009, target: self, selector: "zeroAudioView:", userInfo: nil, repeats: true)
+//                                                    self.hello.text = s6
+//                                                    tts.synthesize(s6) {//en-US_AllisonVoice
+//                                                        data, error in
+//                                                        if let audio = data {
+//                                                            do {
+//                                                                self.player = try AVAudioPlayer(data: audio)
+//                                                                self.player!.play()
+//                                                            } catch {
+//                                                                print("Couldn't create player.")
+//                                                            }
+//                                                        }
+//                                                    }
+//                                                }//last delay 6th
+//                                            }//5.5th delay
+//                                        }// 5th delay
+//                                    }//4.5th delay
+//                                }// 4th delay
+//                            }//3.5rd delay
+//                        }// 3rd delay
+//                    }//2.5nd delay
+//                }// 2nd delay
+//            }//1.5st delay
+            
         }//1st delay
     }// internal func watsonSpeak
     
