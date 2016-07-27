@@ -8,21 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		757273D55AE20AE4F12FCF65 /* Pods_Watson_Dialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF6E8270770781299612032 /* Pods_Watson_Dialog.framework */; };
-		8E56608967033FE885620435 /* Pods_Watson_DialogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3133946D55F872D808C700E /* Pods_Watson_DialogUITests.framework */; };
 		9614456C1C91DBAE00685E65 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9614456B1C91DBAE00685E65 /* UIViewExtensions.swift */; };
 		9627F0F81C976E5E006BCD89 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F11C976E5E006BCD89 /* Alamofire.framework */; };
 		9627F0F91C976E5E006BCD89 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F21C976E5E006BCD89 /* AlamofireObjectMapper.framework */; };
 		9627F0FA1C976E5E006BCD89 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */; };
 		9627F0FB1C976E5E006BCD89 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */; };
 		9627F0FC1C976E5E006BCD89 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F51C976E5E006BCD89 /* Starscream.framework */; };
-		9627F0FD1C976E5E006BCD89 /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F61C976E5E006BCD89 /* WatsonDeveloperCloud.framework */; };
 		9627F0FE1C976E5E006BCD89 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9627F0F71C976E5E006BCD89 /* XCGLogger.framework */; };
 		9627F1001C976E78006BCD89 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F11C976E5E006BCD89 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627F1011C976E78006BCD89 /* AlamofireObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F21C976E5E006BCD89 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627F1021C976E78006BCD89 /* HTTPStatusCodes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627F1031C976E78006BCD89 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627F1041C976E78006BCD89 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F51C976E5E006BCD89 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9627F1051C976E78006BCD89 /* WatsonDeveloperCloud.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F61C976E5E006BCD89 /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627F1061C976E78006BCD89 /* XCGLogger.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9627F0F71C976E5E006BCD89 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9627F15C1C976EBA006BCD89 /* logo-1 (dragged).png in Resources */ = {isa = PBXBuildFile; fileRef = 9627F1071C976EBA006BCD89 /* logo-1 (dragged).png */; };
 		9627F15D1C976EBA006BCD89 /* logo-2 (dragged).png in Resources */ = {isa = PBXBuildFile; fileRef = 9627F1081C976EBA006BCD89 /* logo-2 (dragged).png */; };
@@ -119,7 +116,6 @@
 		9693F8651C99C67E00341690 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9693F8641C99C67E00341690 /* LTMorphingLabel.framework */; };
 		9693F8661C99C6A000341690 /* LTMorphingLabel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9693F8641C99C67E00341690 /* LTMorphingLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		96B605C01C8F38E1004ABBE1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B605BF1C8F38E1004ABBE1 /* SecondViewController.swift */; };
-		970DCAECF0A40B09D0BC8354 /* Pods_Watson_DialogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3817C6307E0BB4BB50FB1B /* Pods_Watson_DialogTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,7 +148,6 @@
 				9627F1021C976E78006BCD89 /* HTTPStatusCodes.framework in CopyFiles */,
 				9627F1031C976E78006BCD89 /* ObjectMapper.framework in CopyFiles */,
 				9627F1041C976E78006BCD89 /* Starscream.framework in CopyFiles */,
-				9627F1051C976E78006BCD89 /* WatsonDeveloperCloud.framework in CopyFiles */,
 				9627F1061C976E78006BCD89 /* XCGLogger.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +157,6 @@
 /* Begin PBXFileReference section */
 		1FBD648D6E577518785B82BD /* Pods-Watson_DialogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_DialogUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_DialogUITests/Pods-Watson_DialogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3624AF6C01FAEE6E9D5DD9A9 /* Pods-Watson_DialogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_DialogUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_DialogUITests/Pods-Watson_DialogUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5E3817C6307E0BB4BB50FB1B /* Pods_Watson_DialogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_DialogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776FCC560220A23BA406E6B6 /* Pods-Watson_DialogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_DialogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_DialogTests/Pods-Watson_DialogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CF6E8270770781299612032 /* Pods_Watson_Dialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_Dialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9614456B1C91DBAE00685E65 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -171,7 +165,6 @@
 		9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTTPStatusCodes.framework; path = Carthage/Build/iOS/HTTPStatusCodes.framework; sourceTree = "<group>"; };
 		9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		9627F0F51C976E5E006BCD89 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
-		9627F0F61C976E5E006BCD89 /* WatsonDeveloperCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatsonDeveloperCloud.framework; path = Carthage/Build/iOS/WatsonDeveloperCloud.framework; sourceTree = "<group>"; };
 		9627F0F71C976E5E006BCD89 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 		9627F1071C976EBA006BCD89 /* logo-1 (dragged).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-1 (dragged).png"; path = "watson_logo/logo-1 (dragged).png"; sourceTree = SOURCE_ROOT; };
 		9627F1081C976EBA006BCD89 /* logo-2 (dragged).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-2 (dragged).png"; path = "watson_logo/logo-2 (dragged).png"; sourceTree = SOURCE_ROOT; };
@@ -273,7 +266,6 @@
 		967B4BFD1C8E561500D538CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9693F8641C99C67E00341690 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
 		96B605BF1C8F38E1004ABBE1 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		A3133946D55F872D808C700E /* Pods_Watson_DialogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_DialogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E5B0AB56591F35986B37CA /* Pods-Watson_Dialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_Dialog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_Dialog/Pods-Watson_Dialog.release.xcconfig"; sourceTree = "<group>"; };
 		DE34606709A312D8109B65AD /* Pods-Watson_DialogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_DialogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_DialogTests/Pods-Watson_DialogTests.release.xcconfig"; sourceTree = "<group>"; };
 		EFCB70D5102070A9E107A322 /* Pods-Watson_Dialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson_Dialog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watson_Dialog/Pods-Watson_Dialog.debug.xcconfig"; sourceTree = "<group>"; };
@@ -291,7 +283,6 @@
 				9627F0FE1C976E5E006BCD89 /* XCGLogger.framework in Frameworks */,
 				9627F0FC1C976E5E006BCD89 /* Starscream.framework in Frameworks */,
 				9627F0FA1C976E5E006BCD89 /* HTTPStatusCodes.framework in Frameworks */,
-				9627F0FD1C976E5E006BCD89 /* WatsonDeveloperCloud.framework in Frameworks */,
 				757273D55AE20AE4F12FCF65 /* Pods_Watson_Dialog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +291,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				970DCAECF0A40B09D0BC8354 /* Pods_Watson_DialogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +298,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E56608967033FE885620435 /* Pods_Watson_DialogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,11 +326,8 @@
 				9627F0F31C976E5E006BCD89 /* HTTPStatusCodes.framework */,
 				9627F0F41C976E5E006BCD89 /* ObjectMapper.framework */,
 				9627F0F51C976E5E006BCD89 /* Starscream.framework */,
-				9627F0F61C976E5E006BCD89 /* WatsonDeveloperCloud.framework */,
 				9627F0F71C976E5E006BCD89 /* XCGLogger.framework */,
 				7CF6E8270770781299612032 /* Pods_Watson_Dialog.framework */,
-				5E3817C6307E0BB4BB50FB1B /* Pods_Watson_DialogTests.framework */,
-				A3133946D55F872D808C700E /* Pods_Watson_DialogUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

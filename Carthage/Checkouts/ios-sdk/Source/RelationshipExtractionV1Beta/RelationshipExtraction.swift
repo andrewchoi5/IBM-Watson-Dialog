@@ -27,11 +27,12 @@ import RestKit
  text that refers to entities, cluster them together to form entities, and extract the relationships 
  between the entities.
  */
+@available(*, deprecated, message="Relationship Extraction will be deprecated on July 27th 2016. If you want to continue using Relationship Extraction models, you can now access them with AlchemyLanguage. See the migration guide for details.")
 public class RelationshipExtraction {
     private let username: String
     private let password: String
     private let serviceURL: String
-    private let userAgent = buildUserAgent("watson-apis-ios-sdk/0.4.2 RelationshipExtractionV1Beta")
+    private let userAgent = buildUserAgent("watson-apis-ios-sdk/0.5.0 RelationshipExtractionV1Beta")
     private let domain = "com.ibm.watson.developer-cloud.RelationshipExtractionV1Beta"
     
     /**

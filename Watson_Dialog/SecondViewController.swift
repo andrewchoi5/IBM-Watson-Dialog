@@ -14,14 +14,11 @@ class SecondViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var hello: LTMorphingLabel!
-    
     @IBOutlet var audioView: SwiftSiriWaveformView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.audioView.density = 1.0
-        
         self.view.backgroundColor = UIColor.blackColor()
 //        audioView.amplitude = 0.2
         self.hello.text = " "

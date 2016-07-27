@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '323C0584122751540E2FF934'
+               BlueprintIdentifier = 'E8A3DCF8276CCC3B5B260161'
                BlueprintName = 'Pods-Watson_DialogUITests'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Watson_DialogUITests.framework'>
